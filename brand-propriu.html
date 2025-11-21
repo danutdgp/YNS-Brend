@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YNS Brend – colecții proprii & haine brand YNS</title>
+  <meta name="description" content="Colecții proprii YNS Brend: seturi, hanorace, tricouri și pantaloni gândite de noi, în stil dark & gold. Haine brand YNS, create pentru viața de zi cu zi, dar cu vibe premium." />
+  <link rel="canonical" href="https://exemplu.ro/brand-propriu.html" />
+  <meta name="theme-color" content="#151515" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="YNS Brend – colecții proprii & haine brand YNS" />
+  <meta property="og:description" content="Descoperă hainele YNS Brend: linii proprii, create de noi, în stil dark & gold. Seturi coordonate, piese de bază și articole cu vibe street." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="poze/og-yns.jpg" />
+
+  <!-- Favicon & icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="poze/favicon-32.png">
+  <link rel="apple-touch-icon" href="poze/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="brand-propriu.css">
+</head>
+<body id="top" class="page-yns">
+  <header class="site" aria-label="Navigație principală">
+    <div class="container bar">
+      <!-- Logo + link Acasă -->
+      <a class="brand" href="./" aria-label="YNS Brend — Acasă">
+        <img src="poze/logo-yns.avif" alt="YNS Brend" />
+        <span class="name">YNS BREND</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Deschide meniul principal">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Meniu principal">
+        <ul>
+          <li><a href="./">Acasă</a></li>
+          <li><a href="haine-de-brand.html">Colecții selectate</a></li>
+          <li><a href="brand-propriu.html" class="active">YNS Brend</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="right">
+        <a class="cart" href="cos.html" aria-label="Coș de cumpărături">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 7h13l-1.5 9.5a2 2 0 0 1-2 1.7H9.4a2 2 0 0 1-2-1.6L5 3H2" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="10" cy="21" r="1.5" fill="currentColor"/>
+            <circle cx="18" cy="21" r="1.5" fill="currentColor"/>
+          </svg>
+          <span class="badge" aria-live="polite">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =============== HERO YNS BREND =============== -->
+    <section class="hero hero-yns">
+      <div class="container wrap reveal">
+        <div class="hero-copy">
+          <div class="kicker">Colecții proprii YNS Brend</div>
+          <h1 class="title">Haine create sub eticheta YNS</h1>
+          <p class="lead">
+            Linii desenate și gândite de noi: seturi coordonate, hanorace, tricouri și pantaloni
+            cu vibe <strong>dark &amp; gold</strong>. Piese care arată premium, dar sunt făcute
+            pentru viața de zi cu zi – școală, job, oraș, weekend.
+          </p>
+          <ul class="hero-bullets">
+            <li>Croiuri testate pe oameni reali, nu doar pe manechine.</li>
+            <li>Materiale alese atent, ca să arate bine și după mai multe purtări.</li>
+            <li>Serii limitate, cu focus pe detalii, nu pe cantitate.</li>
+          </ul>
+          <div class="cta">
+            <button class="btn ghost" type="button" id="open-filters">
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+              Filtrează hainele YNS
+            </button>
+            <a class="btn" href="#lista-produse">Vezi toate produsele YNS</a>
+          </div>
+        </div>
+
+        <div class="hero-visual hero-collage" aria-hidden="true">
+          <div class="hero-collage-main">
+            <img src="poze/yns/yns-hero-1.avif"
+                 alt=""
+                 loading="lazy"
+                 decoding="async">
+          </div>
+          <div class="hero-collage-side">
+            <img src="poze/yns/yns-hero-2.avif"
+                 alt=""
+                 loading="lazy"
+                 decoding="async">
+            <img src="poze/yns/yns-hero-3.avif"
+                 alt=""
+                 loading="lazy"
+                 decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== FILTRE POP-OUT =============== -->
+    <aside class="filters-popout" id="filters-panel" aria-hidden="true">
+      <div class="filters-popout-inner">
+        <div class="filters-popout-header">
+          <h2>Filtre YNS Brend</h2>
+          <button type="button" class="filters-close" id="close-filters" aria-label="Închide filtrele">✕</button>
+        </div>
+
+        <div class="filters-popout-body">
+          <div class="filter-group">
+            <label for="filter-category">Categorie</label>
+            <select id="filter-category">
+              <option value="all">Toate categoriile</option>
+              <option value="set">Seturi coordonate</option>
+              <option value="hanorac">Hanorace &amp; bluze</option>
+              <option value="tricou">Tricouri</option>
+              <option value="pantaloni">Pantaloni</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-gender">Pentru</label>
+            <select id="filter-gender">
+              <option value="all">Damă &amp; bărbați</option>
+              <option value="femei">Doar damă</option>
+              <option value="barbati">Doar bărbați</option>
+              <option value="unisex">Doar unisex</option>
+            </select>
+          </div>
+
+          <div class="filter-group filter-price">
+            <label for="filter-price">Preț maxim</label>
+            <div class="filter-price-control">
+              <input type="range" id="filter-price" min="0" max="600" step="10" value="600" />
+              <span class="price-label">
+                până la <span id="filter-price-value">600</span> lei
+              </span>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label for="sort-by">Sortează după</label>
+            <select id="sort-by">
+              <option value="default">Implicit (adăugare)</option>
+              <option value="price-asc">Preț: crescător</option>
+              <option value="price-desc">Preț: descrescător</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="search-products">Caută după nume / cuvânt cheie</label>
+            <input type="search"
+                   id="search-products"
+                   placeholder="Ex: set, hanorac, tricou logo" />
+          </div>
+
+          <button type="button" class="btn ghost full" id="reset-filters">
+            Resetează filtrele
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- =============== OVERLAY pentru pop-out =============== -->
+    <div class="filters-backdrop" id="filters-backdrop" aria-hidden="true"></div>
+
+    <!-- =============== LISTĂ PRODUSE YNS =============== -->
+    <section class="section container products-section" id="lista-produse" aria-label="Lista de produse YNS Brend">
+      <header class="products-toolbar">
+        <p>
+          <strong><span id="product-count">0</span></strong> produse din colecțiile proprii YNS Brend.
+        </p>
+        <p class="products-note">
+          Toate articolele de mai jos sunt create sub eticheta YNS Brend. Detalii complete vezi pe
+          pagina fiecărui produs.
+        </p>
+      </header>
+
+      <div class="product-grid" id="product-grid">
+        <!-- PRODUS 1 -->
+        <article class="product-card"
+                 data-product
+                 data-category="set"
+                 data-gender="femei"
+                 data-price="279"
+                 data-keywords="set hanorac pantaloni midnight femei yns dark">
+          <a href="produs-set-midnight.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-set-femei-01.avif"
+                   alt="Set hanorac & pantaloni YNS Midnight pentru femei"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Set „Midnight”</h2>
+              <p class="product-meta">Set hanorac &amp; pantaloni · Femei</p>
+              <div class="product-price-row">
+                <span class="product-price">279 lei</span>
+                <span class="product-sizes">S–L</span>
+              </div>
+              <p class="product-info">
+                Set din două piese, în negru intens, cu croi lejer și manșete elastice. De purtat la
+                școală, la job sau în oraș.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 2 -->
+        <article class="product-card"
+                 data-product
+                 data-category="set"
+                 data-gender="unisex"
+                 data-price="289"
+                 data-keywords="set unisex urban gold hanorac pantaloni street yns">
+          <a href="produs-set-urban-gold.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-set-unisex-01.avif"
+                   alt="Set unisex YNS Urban Gold"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Set „Urban Gold”</h2>
+              <p class="product-meta">Set hanorac &amp; pantaloni · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">289 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Set cu detalii aurii discrete și croi modern. Se potrivește la sneakers și ținute
+                street comfy.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 3 -->
+        <article class="product-card"
+                 data-product
+                 data-category="hanorac"
+                 data-gender="unisex"
+                 data-price="199"
+                 data-keywords="hanorac oversize shadow logo unisex negru">
+          <a href="produs-hanorac-shadow.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-hanorac-01.avif"
+                   alt="Hanorac oversize YNS Shadow Logo"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Hanorac „Shadow Logo”</h2>
+              <p class="product-meta">Hanorac oversize · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">199 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Hanorac oversize cu logo mare YNS pe spate. Interior moale, perfect pentru zile
+                reci și seri lungi.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 4 -->
+        <article class="product-card"
+                 data-product
+                 data-category="tricou"
+                 data-gender="unisex"
+                 data-price="109"
+                 data-keywords="tricou clean logo unisex basic alb negru">
+          <a href="produs-tricou-clean-logo.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-tricou-01.avif"
+                   alt="Tricou YNS Clean Logo"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Tricou „Clean Logo”</h2>
+              <p class="product-meta">Tricou basic · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">109 lei</span>
+                <span class="product-sizes">XS–XL</span>
+              </div>
+              <p class="product-info">
+                Tricou simplu, cu logo mic YNS pe piept. Bază perfectă pentru orice outfit de zi
+                cu zi.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 5 -->
+        <article class="product-card"
+                 data-product
+                 data-category="pantaloni"
+                 data-gender="barbati"
+                 data-price="169"
+                 data-keywords="pantaloni tapered fit barbati yns gri negru">
+          <a href="produs-pantaloni-tapered.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-pantaloni-01.avif"
+                   alt="Pantaloni YNS Tapered Fit"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Pantaloni „Tapered Fit”</h2>
+              <p class="product-meta">Pantaloni · Bărbați</p>
+              <div class="product-price-row">
+                <span class="product-price">169 lei</span>
+                <span class="product-sizes">M–XXL</span>
+              </div>
+              <p class="product-info">
+                Pantaloni conici, cu talie reglabilă și buzunare laterale. Se potrivesc cu hanorace
+                sau tricouri basic.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 6 -->
+        <article class="product-card"
+                 data-product
+                 data-category="tricou"
+                 data-gender="unisex"
+                 data-price="119"
+                 data-keywords="tricou unisex essential daily basic bej negru">
+          <a href="produs-tricou-essential.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-tricou-02.avif"
+                   alt="Tricou YNS Essential Daily"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Tricou „Essential Daily”</h2>
+              <p class="product-meta">Tricou · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">119 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Tricou ușor oversized, cu material mai gros și guler întărit. Ideal pentru purtare
+                zilnică.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 7 -->
+        <article class="product-card"
+                 data-product
+                 data-category="set"
+                 data-gender="femei"
+                 data-price="299"
+                 data-keywords="set femei contour top scurt fusta">
+          <a href="produs-set-contour.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-top-01.avif"
+                   alt="Set YNS Contour pentru femei"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Set „Contour”</h2>
+              <p class="product-meta">Set top &amp; fustă · Femei</p>
+              <div class="product-price-row">
+                <span class="product-price">299 lei</span>
+                <span class="product-sizes">XS–L</span>
+              </div>
+              <p class="product-info">
+                Set cu top scurt și fustă cu talie înaltă, gândit pentru ținute mai „de ieșit”, dar
+                tot confortabile.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 8 -->
+        <article class="product-card"
+                 data-product
+                 data-category="hanorac"
+                 data-gender="femei"
+                 data-price="209"
+                 data-keywords="hanorac femei cream soft bej gluga">
+          <a href="produs-hanorac-cream-soft.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-hanorac-02.avif"
+                   alt="Hanorac YNS Cream Soft pentru femei"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Hanorac „Cream Soft”</h2>
+              <p class="product-meta">Hanorac · Femei</p>
+              <div class="product-price-row">
+                <span class="product-price">209 lei</span>
+                <span class="product-sizes">S–L</span>
+              </div>
+              <p class="product-info">
+                Hanorac bej cu interior foarte moale și croi lejer. Merge atât cu colanți, cât și
+                cu blugi.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 9 -->
+        <article class="product-card"
+                 data-product
+                 data-category="pantaloni"
+                 data-gender="unisex"
+                 data-price="189"
+                 data-keywords="pantaloni jogger unisex yns negru buzunare">
+          <a href="produs-jogger-yns.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-pantaloni-02.avif"
+                   alt="Pantaloni jogger YNS unisex"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Pantaloni „YNS Jogger”</h2>
+              <p class="product-meta">Pantaloni · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">189 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Joggeri cu șnur ajustabil, buzunare laterale și elastic la gleznă. Perfecți pentru
+                ținute relaxate.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 10 -->
+        <article class="product-card"
+                 data-product
+                 data-category="hanorac"
+                 data-gender="unisex"
+                 data-price="229"
+                 data-keywords="hanorac unisex zip street active yns">
+          <a href="produs-hanorac-yns-zip.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-hanorac-03.avif"
+                   alt="Hanorac YNS Zip Street"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Hanorac „Zip Street”</h2>
+              <p class="product-meta">Hanorac · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">229 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Hanorac cu fermoar integral, gândit pentru layering. Merge peste tricouri simple
+                sau topuri.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 11 -->
+        <article class="product-card"
+                 data-product
+                 data-category="tricou"
+                 data-gender="unisex"
+                 data-price="129"
+                 data-keywords="tricou graphic yns print spate unisex">
+          <a href="produs-tricou-graphic-yns.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-tricou-03.avif"
+                   alt="Tricou YNS Graphic Back Print"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Tricou „Graphic Back”</h2>
+              <p class="product-meta">Tricou · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">129 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Tricou cu print grafic mare pe spate și față curată. Potrivit pentru ținute mai
+                statement.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 12 -->
+        <article class="product-card"
+                 data-product
+                 data-category="set"
+                 data-gender="unisex"
+                 data-price="319"
+                 data-keywords="set essentials daily training unisex yns">
+          <a href="produs-set-essentials.html">
+            <figure class="product-media">
+              <img src="poze/yns/yns-set-essentials.avif"
+                   alt="Set YNS Essentials Daily unisex"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Set „Essentials Daily”</h2>
+              <p class="product-meta">Set trening · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">319 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Set de zi cu zi, cu hanorac și pantaloni din material confortabil. Bază bună pentru
+                orice garderobă.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site" id="contact">
+    <div class="container">
+      <div class="fcols">
+
+        <div>
+          <div class="brand" style="margin-bottom:8px">
+            <img src="poze/logo-yns.avif" alt="YNS Brend" loading="lazy" decoding="async" />
+            <span class="name">YNS BREND</span>
+          </div>
+          <p style="color:#cfcfcf; max-width:42ch">
+            Magazin de haine pentru fiecare zi — colecții selectate și colecții proprii,
+            în stilul YNS Brend.
+          </p>
+        </div>
+
+        <div>
+          <h4>Asistență</h4>
+          <ul>
+            <li><a href="#">Întrebări frecvente</a></li>
+            <li><a href="#">Politică de retur</a></li>
+            <li><a href="#">Termeni &amp; condiții</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contul meu</h4>
+          <ul>
+            <li><a href="#">Autentificare</a></li>
+            <li><a href="#">Comenzile mele</a></li>
+            <li><a href="#">Favorite</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@ynsbrend.ro">contact@ynsbrend.ro</a></li>
+            <li><a href="tel:+40700000000">+40 700 000 000</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <small>© <span id="y"></span> YNS Brend. Toate drepturile rezervate.</small>
+        <small>Design base: dark &amp; gold UI.</small>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // ===== Mobile nav toggle =====
+    const navToggle = document.querySelector('.nav-toggle');
+    const bodyEl = document.body;
+    const primaryNav = document.getElementById('primary-nav');
+
+    if (navToggle && primaryNav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = bodyEl.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      primaryNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          bodyEl.classList.remove('nav-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // ===== Scroll reveal =====
+    const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealEls = document.querySelectorAll('.reveal');
+
+    if (prefersReduced) {
+      revealEls.forEach(el => el.classList.add('is-visible'));
+    } else if ('IntersectionObserver' in window) {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.14 });
+
+      revealEls.forEach(el => obs.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('is-visible'));
+    }
+
+    // ===== Year in footer =====
+    const yearEl = document.getElementById('y');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    // ===== Pop-out filters open/close =====
+    const filtersPanel    = document.getElementById('filters-panel');
+    const filtersBackdrop = document.getElementById('filters-backdrop');
+    const openFiltersBtn  = document.getElementById('open-filters');
+    const closeFiltersBtn = document.getElementById('close-filters');
+
+    function openFilters() {
+      if (!filtersPanel) return;
+      filtersPanel.classList.add('is-open');
+      filtersBackdrop.classList.add('is-visible');
+      filtersPanel.setAttribute('aria-hidden', 'false');
+      filtersBackdrop.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeFilters() {
+      if (!filtersPanel) return;
+      filtersPanel.classList.remove('is-open');
+      filtersBackdrop.classList.remove('is-visible');
+      filtersPanel.setAttribute('aria-hidden', 'true');
+      filtersBackdrop.setAttribute('aria-hidden', 'true');
+    }
+
+    if (openFiltersBtn)  openFiltersBtn.addEventListener('click', openFilters);
+    if (closeFiltersBtn) closeFiltersBtn.addEventListener('click', closeFilters);
+    if (filtersBackdrop) filtersBackdrop.addEventListener('click', closeFilters);
+
+    // ===== Filtru & sortare produse (cu categorie + gender) =====
+    (function () {
+      const grid = document.getElementById('product-grid');
+      if (!grid) return;
+
+      const cards = Array.from(grid.querySelectorAll('[data-product]'));
+      if (!cards.length) return;
+
+      // memorăm ordinea inițială
+      cards.forEach((card, index) => {
+        card.dataset.index = String(index);
+      });
+
+      const categorySelect = document.getElementById('filter-category');
+      const genderSelect   = document.getElementById('filter-gender');
+      const priceRange    = document.getElementById('filter-price');
+      const priceLabel    = document.getElementById('filter-price-value');
+      const sortSelect    = document.getElementById('sort-by');
+      const searchInput   = document.getElementById('search-products');
+      const countEl       = document.getElementById('product-count');
+      const resetBtn      = document.getElementById('reset-filters');
+
+      let maxPrice = 0;
+      cards.forEach(card => {
+        const p = parseFloat(card.dataset.price || '0') || 0;
+        if (p > maxPrice) maxPrice = p;
+      });
+
+      if (priceRange && priceLabel) {
+        const roundedMax = Math.ceil(maxPrice / 10) * 10 || 100;
+        priceRange.min = '0';
+        priceRange.max = String(roundedMax);
+        priceRange.value = String(roundedMax);
+        priceLabel.textContent = roundedMax;
+      }
+
+      function getFilters() {
+        const category = categorySelect ? categorySelect.value : 'all';
+        const gender   = genderSelect ? genderSelect.value : 'all';
+        const max = priceRange ? (parseFloat(priceRange.value || String(maxPrice)) || maxPrice) : maxPrice;
+        const query = (searchInput ? searchInput.value : '').trim().toLowerCase();
+        const sort = sortSelect ? sortSelect.value : 'default';
+        return { category, gender, max, query, sort };
+      }
+
+      function sortCards(sortValue, list) {
+        const arr = list.slice();
+        if (sortValue === 'price-asc') {
+          arr.sort((a, b) => (parseFloat(a.dataset.price || '0') || 0) - (parseFloat(b.dataset.price || '0') || 0));
+        } else if (sortValue === 'price-desc') {
+          arr.sort((a, b) => (parseFloat(b.dataset.price || '0') || 0) - (parseFloat(a.dataset.price || '0') || 0));
+        } else {
+          arr.sort((a, b) => (parseInt(a.dataset.index, 10) || 0) - (parseInt(b.dataset.index, 10) || 0));
+        }
+        arr.forEach(card => grid.appendChild(card));
+        return arr;
+      }
+
+      function applyFilters() {
+        const { category, gender, max, query, sort } = getFilters();
+        let visibleCount = 0;
+
+        const ordered = sortCards(sort, cards);
+
+        ordered.forEach(card => {
+          const price = parseFloat(card.dataset.price || '0') || 0;
+          const cat = (card.dataset.category || '').toLowerCase();
+          const gen = (card.dataset.gender || '').toLowerCase();
+          const text = (card.dataset.keywords || card.textContent || '').toLowerCase();
+
+          let ok = true;
+
+          if (category !== 'all' && category && cat !== category) ok = false;
+          if (gender !== 'all' && gender && gen !== gender) ok = false;
+          if (max && price > max) ok = false;
+          if (query && !text.includes(query)) ok = false;
+
+          card.style.display = ok ? '' : 'none';
+          if (ok) visibleCount++;
+        });
+
+        if (countEl) {
+          countEl.textContent = String(visibleCount);
+        }
+      }
+
+      function debounce(fn, delay) {
+        let t;
+        return function (...args) {
+          clearTimeout(t);
+          t = setTimeout(() => fn.apply(this, args), delay);
+        };
+      }
+
+      if (categorySelect) categorySelect.addEventListener('change', applyFilters);
+      if (genderSelect)   genderSelect.addEventListener('change', applyFilters);
+      if (priceRange && priceLabel) {
+        priceRange.addEventListener('input', () => {
+          priceLabel.textContent = priceRange.value;
+          applyFilters();
+        });
+      }
+      if (sortSelect) sortSelect.addEventListener('change', applyFilters);
+      if (searchInput) {
+        const debounced = debounce(applyFilters, 180);
+        searchInput.addEventListener('input', debounced);
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          if (categorySelect) categorySelect.value = 'all';
+          if (genderSelect)   genderSelect.value = 'all';
+          if (priceRange) {
+            priceRange.value = priceRange.max;
+            if (priceLabel) {
+              priceLabel.textContent = priceRange.max;
+            }
+          }
+          if (sortSelect) sortSelect.value = 'default';
+          if (searchInput) searchInput.value = '';
+          applyFilters();
+        });
+      }
+
+      applyFilters();
+    })();
+
+    // ===== Hero collage rotator (YNS) =====
+    (function () {
+      const mainImg = document.querySelector('.hero-collage-main img');
+      const sideImgs = document.querySelectorAll('.hero-collage-side img');
+      const productImgs = Array.from(document.querySelectorAll('.product-card .product-media img'));
+
+      if (!mainImg || sideImgs.length < 2 || !productImgs.length) return;
+
+      const sources = productImgs
+        .map(img => img.getAttribute('src'))
+        .filter(Boolean);
+
+      if (sources.length < 3) return;
+
+      let index = 0;
+
+      function updateHero() {
+        mainImg.src      = sources[index % sources.length];
+        sideImgs[0].src  = sources[(index + 1) % sources.length];
+        sideImgs[1].src  = sources[(index + 2) % sources.length];
+        index = (index + 3) % sources.length;
+      }
+
+      updateHero();
+      setInterval(updateHero, 3500);
+    })();
+  </script>
+</body>
+</html>

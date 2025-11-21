@@ -1,0 +1,1218 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Haine de brand – colecții selectate | YNS Brend</title>
+  <meta name="description" content="Colecții selectate de haine de brand la YNS Brend: treninguri, geci, seturi comode și piese de zi cu zi. Haine verificate, potrivite pentru școală, job, oraș și timp liber." />
+  <link rel="canonical" href="https://exemplu.ro/haine-de-brand.html" />
+  <meta name="theme-color" content="#151515" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Haine de brand – colecții selectate | YNS Brend" />
+  <meta property="og:description" content="Colecții selectate de haine de brand și piese gata de purtat. Treninguri, geci, pantaloni și seturi comode, cu livrare rapidă și retur simplu." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="poze/og-yns.jpg" />
+
+  <!-- Favicon & icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="poze/favicon-32.png">
+  <link rel="apple-touch-icon" href="poze/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="haine-de-brand.css">
+</head>
+<body id="top" class="page-brand">
+  <header class="site" aria-label="Navigație principală">
+    <div class="container bar">
+      <!-- Logo + link Acasă -->
+      <a class="brand" href="./" aria-label="YNS Brend — Acasă">
+        <img src="poze/logo-yns.avif" alt="YNS Brend" />
+        <span class="name">YNS BREND</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Deschide meniul principal">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Meniu principal">
+        <ul>
+          <li><a href="./">Acasă</a></li>
+          <li><a href="haine-de-brand.html" class="active">Colecții selectate</a></li>
+          <li><a href="brand-propriu.html">YNS Brend</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="right">
+        <!-- fără search în header -->
+        <a class="cart" href="cos.html" aria-label="Coș de cumpărături">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 7h13l-1.5 9.5a2 2 0 0 1-2 1.7H9.4a2 2 0 0 1-2-1.6L5 3H2" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="10" cy="21" r="1.5" fill="currentColor"/>
+            <circle cx="18" cy="21" r="1.5" fill="currentColor"/>
+          </svg>
+          <span class="badge" aria-live="polite">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =============== HERO COLECȚII SELECTATE =============== -->
+    <section class="hero hero-collections">
+      <div class="container wrap reveal">
+        <div class="hero-copy">
+          <div class="kicker">Colecții selectate & haine de brand</div>
+          <h1 class="title">Haine de brand, gata de purtat</h1>
+          <p class="lead">
+            Treninguri, geci, seturi și articole de zi cu zi, selectate din colecții populare.
+            Piese ușor de combinat, verificate la calitate, potrivite pentru școală, job
+            sau ieșiri în oraș.
+          </p>
+          <ul class="hero-bullets">
+            <li>Stoc actualizat constant, fără liste interminabile.</li>
+            <li>Fotografii reale, făcute pe produse pe care chiar le avem.</li>
+            <li>Livrare rapidă & retur simplu în 14 zile.</li>
+          </ul>
+          <div class="cta">
+            <button class="btn ghost" type="button" id="open-filters">
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+              Filtrează produsele
+            </button>
+            <a class="btn" href="#lista-produse">Vezi toate produsele</a>
+          </div>
+        </div>
+
+        <div class="hero-visual hero-collage" aria-hidden="true">
+          <div class="hero-collage-main">
+            <img src="poze/brand/colectii-1.avif"
+                 alt=""
+                 loading="lazy"
+                 decoding="async">
+          </div>
+          <div class="hero-collage-side">
+            <img src="poze/brand/colectii-2.avif"
+                 alt=""
+                 loading="lazy"
+                 decoding="async">
+            <img src="poze/brand/colectii-3.avif"
+                 alt=""
+                 loading="lazy"
+                 decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== FILTRE POP-OUT =============== -->
+    <aside class="filters-popout" id="filters-panel" aria-hidden="true">
+      <div class="filters-popout-inner">
+        <div class="filters-popout-header">
+          <h2>Filtre produse</h2>
+          <button type="button" class="filters-close" id="close-filters" aria-label="Închide filtrele">✕</button>
+        </div>
+
+        <div class="filters-popout-body">
+          <div class="filter-group">
+            <label for="filter-category">Categorie</label>
+            <select id="filter-category">
+              <option value="all">Toate categoriile</option>
+              <option value="trening">Treninguri & seturi</option>
+              <option value="geaca">Geci & jachete</option>
+              <option value="pantaloni">Pantaloni</option>
+              <option value="hanorac">Hanorace & bluze</option>
+              <option value="tricou">Tricouri</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-gender">Pentru</label>
+            <select id="filter-gender">
+              <option value="all">Damă &amp; bărbați</option>
+              <option value="femei">Doar damă</option>
+              <option value="barbati">Doar bărbați</option>
+              <option value="unisex">Doar unisex</option>
+            </select>
+          </div>
+
+          <div class="filter-group filter-price">
+            <label for="filter-price">Preț maxim</label>
+            <div class="filter-price-control">
+              <input type="range" id="filter-price" min="0" max="600" step="10" value="600" />
+              <span class="price-label">
+                până la <span id="filter-price-value">600</span> lei
+              </span>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <label for="sort-by">Sortează după</label>
+            <select id="sort-by">
+              <option value="default">Implicit (adăugare)</option>
+              <option value="price-asc">Preț: crescător</option>
+              <option value="price-desc">Preț: descrescător</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="search-products">Caută după nume / brand</label>
+            <input type="search"
+                   id="search-products"
+                   placeholder="Ex: trening negru, geacă, ADS" />
+          </div>
+
+          <button type="button" class="btn ghost full" id="reset-filters">
+            Resetează filtrele
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- =============== OVERLAY pentru pop-out =============== -->
+    <div class="filters-backdrop" id="filters-backdrop" aria-hidden="true"></div>
+
+    <!-- =============== LISTĂ PRODUSE =============== -->
+    <section class="section container products-section" id="lista-produse" aria-label="Lista de produse din colecțiile selectate">
+      <header class="products-toolbar">
+        <p>
+          <strong><span id="product-count">0</span></strong> produse găsite
+          în colecțiile selectate.
+        </p>
+        <p class="products-note">
+          Pozele sunt orientative; detaliile exacte le vezi pe pagina fiecărui produs.
+        </p>
+      </header>
+
+      <div class="product-grid" id="product-grid">
+        <!-- PRODUS 1 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="329" data-keywords="trening dama nike negru trening dama set hanorac pantaloni">
+          <a href="produs-trening-nke.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-1.avif"
+                   alt="Trening NKE negru pentru damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening NKE negru</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">329 lei</span>
+                <span class="product-sizes">M–XL</span>
+              </div>
+              <p class="product-info">
+                Trening de damă, în nuanță închisă, cu hanorac și pantaloni din material gros. Croi lejer, ideal pentru ținute casual de toamnă-iarnă.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 2 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="459" data-keywords="trening dama adidas negru dungi trening ADS black">
+          <a href="produs-trening-ads-black.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-2.avif"
+                   alt="Trening ADS Black damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening ADS Black</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">459 lei</span>
+                <span class="product-sizes">S–L</span>
+              </div>
+              <p class="product-info">
+                Trening negru de damă, cu dungi laterale și fermoar metalic. Potrivit atât pentru ținute sport, cât și pentru ieșiri în oraș.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 3 -->
+        <article class="product-card" data-product data-category="geaca" data-gender="barbati" data-price="249" data-keywords="geaca barbati arm ex groasa matlasata">
+          <a href="produs-geaca-arm-ex.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-3.avif"
+                   alt="Geacă ARM EX pentru bărbați"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Geacă ARM EX</h2>
+              <p class="product-meta">Geacă · Bărbați</p>
+              <div class="product-price-row">
+                <span class="product-price">249 lei</span>
+                <span class="product-sizes">M–XXL</span>
+              </div>
+              <p class="product-info">
+                Geacă matlasată cu glugă detașabilă și buzunare laterale. Bună pentru temperaturi de 5–10°C, de purtat zilnic.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 4 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="279" data-keywords="trening dama roz adidas trening ADS roz">
+          <a href="produs-trening-ads-roz.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-4.avif"
+                   alt="Trening ADS roz damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening ADS roz</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">279 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Trening roz de damă, cu bluza lejeră și pantaloni cu talie înaltă. Nuanță plăcută, perfectă pentru ținute casual feminine.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 5 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="219" data-keywords="trening dama karl negru trening KRL LAGE">
+          <a href="produs-trening-krl-lage.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-5.avif"
+                   alt="Trening KRL LAGE"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening KRL LAGE</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">219 lei</span>
+                <span class="product-sizes">M–XL</span>
+              </div>
+              <p class="product-info">
+                Trening de damă cu detalii inspirate Karl, bluza cu fermoar și pantaloni conici. Material confortabil, bun pentru sală sau ieșiri în oraș.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 6 -->
+        <article class="product-card" data-product data-category="geaca" data-gender="barbati" data-price="389" data-keywords="geaca barbati the north face groasa neagra">
+          <a href="produs-geaca-the-ndface.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-6.avif"
+                   alt="Geacă The NDFACE"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Geacă The NDFACE</h2>
+              <p class="product-meta">Geacă · Bărbați</p>
+              <div class="product-price-row">
+                <span class="product-price">389 lei</span>
+                <span class="product-sizes">M–XXL</span>
+              </div>
+              <p class="product-info">
+                Geacă groasă cu umplutură și glugă, gândită pentru zile foarte reci. Închidere cu fermoar și capse, cu look de brand.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 7 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="239" data-keywords="trening dama DG negru trening dolce gab">
+          <a href="produs-trening-dg.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-7.avif"
+                   alt="Trening DG damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening DG</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">239 lei</span>
+                <span class="product-sizes">M–XL</span>
+              </div>
+              <p class="product-info">
+                Trening de damă inspirat DG, cu hanorac cu fermoar și pantaloni drepți. Stil simplu, ușor de combinat cu adidași sau bocanci.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 8 -->
+        <article class="product-card" data-product data-category="geaca" data-gender="barbati" data-price="199" data-keywords="geaca barbati moncler lucioasa neagra">
+          <a href="produs-geaca-mncl.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-8.avif"
+                   alt="Geacă MNCL damă/bărbați"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Geacă MNCL</h2>
+              <p class="product-meta">Geacă · Bărbați</p>
+              <div class="product-price-row">
+                <span class="product-price">199 lei</span>
+                <span class="product-sizes">S–L</span>
+              </div>
+              <p class="product-info">
+                Geacă tip Moncler, cu luciu discret și glugă cu blăniță. Potrivită pentru ținute streetwear de sezon rece.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 9 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="349" data-keywords="trening dama adidas gros negru dungi">
+          <a href="produs-trening-ads.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-9.avif"
+                   alt="Trening ADS damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening ADS</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">349 lei</span>
+                <span class="product-sizes">M–XXL</span>
+              </div>
+              <p class="product-info">
+                Trening de damă cu dungi laterale, hanorac cu glugă și pantaloni din material gros. Excelent pentru zilele mai reci.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 10 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="399" data-keywords="trening dama guess negru trening GUS">
+          <a href="brand-propriu.html#colectii-yns">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-10.avif"
+                   alt="Trening GUS damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening GUS</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">399 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Trening de damă inspirat Guess, cu bandă logo pe lateral și croi modern. De purtat la oraș, cu sneakers sau ghete.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+       <!-- PRODUS 11 -->
+<article class="product-card"
+         data-product
+         data-category="geaca"
+         data-gender="femei"
+         data-price="319"
+         data-keywords="geaca dama lunga moncler crem calduroasa cordon blana">
+  <a href="produs-trening-cream-soft.html">
+    <figure class="product-media">
+      <img src="poze/brand/colectii-11.avif"
+           alt="Geacă MNCL lungă pentru damă"
+           loading="lazy"
+           decoding="async">
+    </figure>
+    <div class="product-body">
+      <h2 class="product-title">Geacă MNCL Long</h2>
+      <p class="product-meta">Geacă · Damă</p>
+      <div class="product-price-row">
+        <span class="product-price">319 lei</span>
+        <span class="product-sizes">S–XL</span>
+      </div>
+      <p class="product-info">
+        Geacă lungă tip Moncler, cu cordon în talie și glugă cu blăniță. Ține foarte bine de cald și arată elegant peste orice ținută.
+      </p>
+      <span class="product-cta">Detalii produs</span>
+    </div>
+  </a>
+</article>
+<!-- PRODUS 12 -->
+<article class="product-card"
+         data-product
+         data-category="geaca"
+         data-gender="femei"
+         data-price="189"
+         data-keywords="geaca dama puffer the north face maro calduroasa">
+  <a href="produs-geaca-nf-brown.html">
+    <figure class="product-media">
+      <img src="poze/brand/colectii-12.avif"
+           alt="Geacă puffer The North Face pentru damă"
+           loading="lazy"
+           decoding="async">
+    </figure>
+    <div class="product-body">
+      <h2 class="product-title">Geacă Puffer NF Brown</h2>
+      <p class="product-meta">Geacă · Damă</p>
+      <div class="product-price-row">
+        <span class="product-price">189 lei</span>
+        <span class="product-sizes">M–XXL</span>
+      </div>
+      <p class="product-info">
+        Geacă puffer tip The North Face, în nuanță caldă de maro, cu glugă și umplutură călduroasă. Potrivită pentru ținute casual de iarnă.
+      </p>
+      <span class="product-cta">Detalii produs</span>
+    </div>
+  </a>
+</article>
+
+
+        <!-- PRODUS 13 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="129" data-keywords="trening miu dama trening alb-verde">
+          <a href="produs-trening-oversize-alb.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-13.avif"
+                   alt="Trening MIU Classic damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening MIU Classic</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">129 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Trening de damă inspirat Miu, cu textură plăcută și croi drept. Potrivit pentru ținute comode, dar cu look de brand.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+<!-- PRODUS 14 -->
+<article class="product-card"
+         data-product
+         data-category="trening"
+         data-gender="femei"
+         data-price="209"
+         data-keywords="trening dama adidas bleumarin hanorac pantaloni set ADS navy">
+  <a href="produs-trening-ads-navy.html">
+    <figure class="product-media">
+      <img src="poze/brand/colectii-14.avif"
+           alt="Trening ADS bleumarin pentru damă"
+           loading="lazy"
+           decoding="async">
+    </figure>
+    <div class="product-body">
+      <h2 class="product-title">Trening ADS Navy</h2>
+      <p class="product-meta">Trening · Damă</p>
+      <div class="product-price-row">
+        <span class="product-price">209 lei</span>
+        <span class="product-sizes">XS–L</span>
+      </div>
+      <p class="product-info">
+        Trening de damă bleumarin, cu hanorac cu fermoar și pantaloni conici cu buzunare. Set comod, perfect pentru sală, plimbări sau ținute casual.
+      </p>
+      <span class="product-cta">Detalii produs</span>
+    </div>
+  </a>
+</article>
+
+        </article>
+
+        <!-- PRODUS 15 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="279" data-keywords="trening miu crem dama elegant">
+          <a href="produs-geaca-cream-city.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-15.avif"
+                   alt="Trening MIU Alb damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening MIU Alb</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">279 lei</span>
+                <span class="product-sizes">S–L</span>
+              </div>
+              <p class="product-info">
+                Trening alb cu textură plăcută și croi wide, inspirat Miu. Perfect pentru ținute light, minimaliste, cu sneakers albi.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 16 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="339" data-keywords="trening elegant miu dama bej">
+          <a href="produs-trening-dark-grey.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-16.avif"
+                   alt="Trening MIU Elegant damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening MIU Elegant</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">339 lei</span>
+                <span class="product-sizes">M–XXL</span>
+              </div>
+              <p class="product-info">
+                Trening elegant de damă, cu pantaloni evazați și bluză cu croi lejer. Nuanță neutră, potrivită pentru ținute smart casual.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 17 -->
+        <article class="product-card" data-product data-category="tricou" data-gender="femei" data-price="139" data-keywords="trening guess dama negru logo side">
+          <a href="produs-tricou-logo-mini.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-17.avif"
+                   alt="Trening GUESS Black damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening GUESS Black</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">139 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Trening negru de damă, cu imprimeu logo GUESS pe lateral. Croi modern, de purtat cu adidași și jachete scurte.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 18 -->
+        <article class="product-card" data-product data-category="pantaloni" data-gender="femei" data-price="199" data-keywords="trening moncler rosu dama pufos">
+          <a href="produs-pantaloni-cargo-khaki.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-18.avif"
+                   alt="Trening MNCL Red damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening MNCL Red</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">199 lei</span>
+                <span class="product-sizes">M–XXL</span>
+              </div>
+              <p class="product-info">
+                Trening roșu tip Moncler, din material pufos, cu hanorac și pantaloni drepți. Ținută statement, ideală pentru sezon rece.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 19 -->
+        <article class="product-card" data-product data-category="hanorac" data-gender="femei" data-price="219" data-keywords="hanorac adidas dama negru simplu">
+          <a href="produs-hanorac-simple-black.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-19.avif"
+                   alt="Hanorac Simple Black damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Hanorac Simple Black</h2>
+              <p class="product-meta">Hanorac · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">219 lei</span>
+                <span class="product-sizes">M–XXL</span>
+              </div>
+              <p class="product-info">
+                Hanorac negru de damă, cu logo pe piept și buzunar mare frontal. Se potrivește la blugi, joggeri sau colanți.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 20 -->
+        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="309" data-keywords="trening tommy dama crem elegant">
+          <a href="produs-geaca-long-black.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-20.avif"
+                   alt="Trening Tommy Cream damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening Tommy Cream</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">309 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Trening inspirat Tommy, în nuanță crem, cu hanorac lung și pantaloni drepți. Potrivit pentru ținute de oraș sau birou casual.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 21 -->
+        <article class="product-card" data-product data-category="tricou" data-gender="unisex" data-price="329" data-keywords="fes adidas nike set unisex caciuli iarna">
+          <a href="produs-trening-blush-pink.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-21.avif"
+                   alt="Set fesuri Adidas & Nike"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Set fesuri ADS & NKE</h2>
+              <p class="product-meta">Fesuri · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">329 lei</span>
+                <span class="product-sizes">XS–L</span>
+              </div>
+              <p class="product-info">
+                Set de două fesuri, unul crem și unul roșu, inspirate Adidas și Nike. Accesorii perfecte pentru completat ținutele de iarnă.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 22 -->
+        <article class="product-card" data-product data-category="trening" data-gender="barbati" data-price="119" data-keywords="trening hugo barbati negru rosu">
+          <a href="produs-tricou-bej-basic.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-22.avif"
+                   alt="Trening HUGO Black bărbați"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening HUGO Black</h2>
+              <p class="product-meta">Trening · Bărbați</p>
+              <div class="product-price-row">
+                <span class="product-price">119 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Trening negru inspirat Hugo, cu detalii roșii și fermoar la bluză. De purtat la oraș sau în călătorii, cu adidași sau bocanci.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 23 -->
+        <article class="product-card" data-product data-category="pantaloni" data-gender="femei" data-price="209" data-keywords="blugi mom fit dama albastri talie inalta">
+          <a href="produs-pantaloni-straight-fit.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-23.avif"
+                   alt="Blugi Mom Fit Blue damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Blugi Mom Fit Blue</h2>
+              <p class="product-meta">Pantaloni · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">209 lei</span>
+                <span class="product-sizes">S–L</span>
+              </div>
+              <p class="product-info">
+                Blugi mom fit albaștri, cu talie înaltă și croi drept. Se potrivesc cu tricouri, hanorace sau geci scurte.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 24 -->
+        <article class="product-card" data-product data-category="pantaloni" data-gender="femei" data-price="229" data-keywords="blugi mom fit dama gri talie inalta">
+          <a href="produs-hanorac-light-grey.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-24.avif"
+                   alt="Blugi Mom Fit Grey damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Blugi Mom Fit Grey</h2>
+              <p class="product-meta">Pantaloni · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">229 lei</span>
+                <span class="product-sizes">S–XL</span>
+              </div>
+              <p class="product-info">
+                Blugi mom fit gri, cu talie înaltă și spălare washed. Ideali pentru ținute de oraș, combinați cu pulovere sau hanorace.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 25 -->
+        <article class="product-card" data-product data-category="trening" data-gender="unisex" data-price="359" data-keywords="fesuri tommy hilfiger set unisex rosii">
+          <a href="produs-trening-line-black.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-25.avif"
+                   alt="Set fesuri Tommy unisex"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Set fesuri Tommy</h2>
+              <p class="product-meta">Fesuri · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">359 lei</span>
+                <span class="product-sizes">S–L</span>
+              </div>
+              <p class="product-info">
+                Set de două fesuri tricotate, în nuanțe puternice, cu logo Tommy. Accente de culoare pentru ținutele de iarnă.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 26 -->
+        <article class="product-card" data-product data-category="geaca" data-gender="barbati" data-price="329" data-keywords="trening north face barbati gri">
+          <a href="produs-geaca-puffer-green.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-26.avif"
+                   alt="Trening NF Grey bărbați"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening NF Grey</h2>
+              <p class="product-meta">Trening · Bărbați</p>
+              <div class="product-price-row">
+                <span class="product-price">329 lei</span>
+                <span class="product-sizes">M–XXL</span>
+              </div>
+              <p class="product-info">
+                Trening gri tip The North Face, cu hanorac cu fermoar și pantaloni conici. Material dens, potrivit pentru sezon rece.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 28 -->
+        <article class="product-card" data-product data-category="pantaloni" data-gender="barbati" data-price="179" data-keywords="trening the north face barbati negru high rise">
+          <a href="produs-colanti-high-rise.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-28.avif"
+                   alt="Trening NF Black Warm bărbați"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening NF Black Warm</h2>
+              <p class="product-meta">Trening · Bărbați</p>
+              <div class="product-price-row">
+                <span class="product-price">179 lei</span>
+                <span class="product-sizes">XS–L</span>
+              </div>
+              <p class="product-info">
+                Trening negru The North Face, cu interior călduros și croi confortabil. Bun pentru zile friguroase și ținute sport.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 29 -->
+        <article class="product-card" data-product data-category="hanorac" data-gender="unisex" data-price="239" data-keywords="fes hugo tommy unisex set negru">
+          <a href="produs-hanorac-zip-blush.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-29.avif"
+                   alt="Set fesuri Hugo & Tommy unisex"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Set fesuri Hugo & Tommy</h2>
+              <p class="product-meta">Fesuri · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">239 lei</span>
+                <span class="product-sizes">S–L</span>
+              </div>
+              <p class="product-info">
+                Set de două fesuri negre, cu patch Hugo și Tommy. Accesorii simple, dar vizibile, pentru orice outfit de iarnă.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 30 -->
+        <article class="product-card" data-product data-category="trening" data-gender="unisex" data-price="369" data-keywords="fes nike calvin klein unisex set negru">
+          <a href="produs-trening-royal-blue.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-30.avif"
+                   alt="Set fesuri Nike & CK unisex"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Set fesuri Nike & CK</h2>
+              <p class="product-meta">Fesuri · Unisex</p>
+              <div class="product-price-row">
+                <span class="product-price">369 lei</span>
+                <span class="product-sizes">M–XXL</span>
+              </div>
+              <p class="product-info">
+                Set de fesuri negre, cu logo Nike și Calvin Klein. Se potrivesc la ținute full black sau combinat cu jachete colorate.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- PRODUS 31 -->
+        <article class="product-card" data-product data-category="pantaloni" data-gender="femei" data-price="349" data-keywords="pantaloni piele dama negri skinny">
+          <a href="produs-geaca-elegant-beige.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-31.avif"
+                   alt="Pantaloni din piele neagră pentru damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Pantaloni din piele neagră</h2>
+              <p class="product-meta">Pantaloni · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">349 lei</span>
+                <span class="product-sizes">S–L</span>
+              </div>
+              <p class="product-info">
+                Pantaloni din imitație de piele neagră, cu talie medie și croi drept. Potriviți pentru ținute de seară sau look-uri mai îndrăznețe.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site" id="contact">
+    <div class="container">
+      <div class="fcols">
+
+        <div>
+          <div class="brand" style="margin-bottom:8px">
+            <img src="poze/logo-yns.avif" alt="YNS Brend" loading="lazy" decoding="async" />
+            <span class="name">YNS BREND</span>
+          </div>
+          <p style="color:#cfcfcf; max-width:42ch">
+            Magazin de haine pentru fiecare zi — colecții selectate și colecții proprii,
+            în stilul YNS Brend.
+          </p>
+        </div>
+
+        <div>
+          <h4>Asistență</h4>
+          <ul>
+            <li><a href="#">Întrebări frecvente</a></li>
+            <li><a href="#">Politică de retur</a></li>
+            <li><a href="#">Termeni &amp; condiții</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contul meu</h4>
+          <ul>
+            <li><a href="#">Autentificare</a></li>
+            <li><a href="#">Comenzile mele</a></li>
+            <li><a href="#">Favorite</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@ynsbrend.ro">contact@ynsbrend.ro</a></li>
+            <li><a href="tel:+40700000000">+40 700 000 000</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <small>© <span id="y"></span> YNS Brend. Toate drepturile rezervate.</small>
+        <small>Design base: dark &amp; gold UI.</small>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // ===== Mobile nav toggle =====
+    const navToggle = document.querySelector('.nav-toggle');
+    const bodyEl = document.body;
+    const primaryNav = document.getElementById('primary-nav');
+
+    if (navToggle && primaryNav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = bodyEl.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      primaryNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          bodyEl.classList.remove('nav-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // ===== Scroll reveal =====
+    const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealEls = document.querySelectorAll('.reveal');
+
+    if (prefersReduced) {
+      revealEls.forEach(el => el.classList.add('is-visible'));
+    } else if ('IntersectionObserver' in window) {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.14 });
+
+      revealEls.forEach(el => obs.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('is-visible'));
+    }
+
+    // ===== Year in footer =====
+    const yearEl = document.getElementById('y');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    // ===== Pop-out filters open/close =====
+    const filtersPanel    = document.getElementById('filters-panel');
+    const filtersBackdrop = document.getElementById('filters-backdrop');
+    const openFiltersBtn  = document.getElementById('open-filters');
+    const closeFiltersBtn = document.getElementById('close-filters');
+
+    function openFilters() {
+      if (!filtersPanel) return;
+      filtersPanel.classList.add('is-open');
+      filtersBackdrop.classList.add('is-visible');
+      filtersPanel.setAttribute('aria-hidden', 'false');
+      filtersBackdrop.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeFilters() {
+      if (!filtersPanel) return;
+      filtersPanel.classList.remove('is-open');
+      filtersBackdrop.classList.remove('is-visible');
+      filtersPanel.setAttribute('aria-hidden', 'true');
+      filtersBackdrop.setAttribute('aria-hidden', 'true');
+    }
+
+    if (openFiltersBtn)  openFiltersBtn.addEventListener('click', openFilters);
+    if (closeFiltersBtn) closeFiltersBtn.addEventListener('click', closeFilters);
+    if (filtersBackdrop) filtersBackdrop.addEventListener('click', closeFilters);
+
+    // ===== Filtru & sortare produse (categorie + gender) =====
+    (function () {
+      const grid = document.getElementById('product-grid');
+      if (!grid) return;
+
+      const cards = Array.from(grid.querySelectorAll('[data-product]'));
+      if (!cards.length) return;
+
+      // Memorăm ordinea inițială (pentru sortare "implicit")
+      cards.forEach((card, index) => {
+        card.dataset.index = String(index);
+      });
+
+      const categorySelect = document.getElementById('filter-category');
+      const genderSelect   = document.getElementById('filter-gender');
+      const priceRange    = document.getElementById('filter-price');
+      const priceLabel    = document.getElementById('filter-price-value');
+      const sortSelect    = document.getElementById('sort-by');
+      const searchInput   = document.getElementById('search-products');
+      const countEl       = document.getElementById('product-count');
+      const resetBtn      = document.getElementById('reset-filters');
+
+      // Calculăm prețul maxim din carduri
+      let maxPrice = 0;
+      cards.forEach(card => {
+        const p = parseFloat(card.dataset.price || '0') || 0;
+        if (p > maxPrice) maxPrice = p;
+      });
+
+      if (priceRange && priceLabel) {
+        const roundedMax = Math.ceil(maxPrice / 10) * 10 || 100;
+        priceRange.min = '0';
+        priceRange.max = String(roundedMax);
+        priceRange.value = String(roundedMax);
+        priceLabel.textContent = roundedMax;
+      }
+
+      function getFilters() {
+        const category = categorySelect ? categorySelect.value : 'all';
+        const gender   = genderSelect ? genderSelect.value   : 'all';
+        const max = priceRange ? (parseFloat(priceRange.value || String(maxPrice)) || maxPrice) : maxPrice;
+        const query = (searchInput ? searchInput.value : '').trim().toLowerCase();
+        const sort = sortSelect ? sortSelect.value : 'default';
+        return { category, gender, max, query, sort };
+      }
+
+      function sortCards(sortValue, list) {
+        const arr = list.slice();
+        if (sortValue === 'price-asc') {
+          arr.sort((a, b) => (parseFloat(a.dataset.price || '0') || 0) - (parseFloat(b.dataset.price || '0') || 0));
+        } else if (sortValue === 'price-desc') {
+          arr.sort((a, b) => (parseFloat(b.dataset.price || '0') || 0) - (parseFloat(a.dataset.price || '0') || 0));
+        } else {
+          arr.sort((a, b) => (parseInt(a.dataset.index, 10) || 0) - (parseInt(b.dataset.index, 10) || 0));
+        }
+        arr.forEach(card => grid.appendChild(card));
+        return arr;
+      }
+
+      function applyFilters() {
+        const { category, gender, max, query, sort } = getFilters();
+        let visibleCount = 0;
+
+        // mai întâi sortăm
+        const ordered = sortCards(sort, cards);
+
+        ordered.forEach(card => {
+          const price = parseFloat(card.dataset.price || '0') || 0;
+          const cat = (card.dataset.category || '').toLowerCase();
+          const gen = (card.dataset.gender || '').toLowerCase();
+          const text = (card.dataset.keywords || card.textContent || '').toLowerCase();
+
+          let ok = true;
+
+          if (category !== 'all' && category && cat !== category) ok = false;
+          if (gender !== 'all' && gender && gen !== gender) ok = false;
+          if (max && price > max) ok = false;
+          if (query && !text.includes(query)) ok = false;
+
+          card.style.display = ok ? '' : 'none';
+          if (ok) visibleCount++;
+        });
+
+        if (countEl) {
+          countEl.textContent = String(visibleCount);
+        }
+      }
+
+      function debounce(fn, delay) {
+        let t;
+        return function (...args) {
+          clearTimeout(t);
+          t = setTimeout(() => fn.apply(this, args), delay);
+        };
+      }
+
+      if (categorySelect) categorySelect.addEventListener('change', applyFilters);
+      if (genderSelect)   genderSelect.addEventListener('change', applyFilters);
+      if (priceRange && priceLabel) {
+        priceRange.addEventListener('input', () => {
+          priceLabel.textContent = priceRange.value;
+          applyFilters();
+        });
+      }
+      if (sortSelect) sortSelect.addEventListener('change', applyFilters);
+      if (searchInput) {
+        const debounced = debounce(applyFilters, 180);
+        searchInput.addEventListener('input', debounced);
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          if (categorySelect) categorySelect.value = 'all';
+          if (genderSelect)   genderSelect.value   = 'all';
+          if (priceRange) {
+            priceRange.value = priceRange.max;
+            if (priceLabel) {
+              priceLabel.textContent = priceRange.max;
+            }
+          }
+          if (sortSelect) {
+            sortSelect.value = 'default';
+          }
+          if (searchInput) {
+            searchInput.value = '';
+          }
+          applyFilters();
+        });
+      }
+
+      // aplicăm filtrarea inițială
+      applyFilters();
+    })();
+
+    // ===== Hero collage rotator (toate produsele) =====
+    (function () {
+      const mainImg = document.querySelector('.hero-collage-main img');
+      const sideImgs = document.querySelectorAll('.hero-collage-side img');
+      const productImgs = Array.from(document.querySelectorAll('.product-card .product-media img'));
+
+      if (!mainImg || sideImgs.length < 2 || !productImgs.length) return;
+
+      const sources = productImgs
+        .map(img => img.getAttribute('src'))
+        .filter(Boolean);
+
+      if (sources.length < 3) return;
+
+      let index = 0;
+
+      function updateHero() {
+        mainImg.src      = sources[index % sources.length];
+        sideImgs[0].src  = sources[(index + 1) % sources.length];
+        sideImgs[1].src  = sources[(index + 2) % sources.length];
+        index = (index + 3) % sources.length;
+      }
+
+      updateHero();
+      setInterval(updateHero, 3500);
+    })();
+  </script>
+</body>
+</html>
