@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coș de cumpărături – YNS Brend</title>
+
+  <!-- SEO de bază -->
+  <meta name="description" content="Coșul tău de cumpărături YNS Brend – vezi produsele selectate, modifică cantitățile și trimite comanda rapid pe WhatsApp." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <meta name="author" content="YNS Brend" />
+  <link rel="canonical" href="https://exemplu.ro/cos.html" />
+  <meta name="theme-color" content="#151515" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Coș de cumpărături – YNS Brend" />
+  <meta property="og:description" content="Verifică produsele din coșul tău YNS Brend și trimite comanda rapid pe WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://exemplu.ro/cos.html" />
+  <meta property="og:site_name" content="YNS Brend" />
+
+  <!-- Favicon / logo tab -->
+  <link rel="icon" type="image/svg+xml" href="poze/favicon.svg">
+  <link rel="alternate icon" type="image/png" sizes="96x96" href="poze/favicon-96x96.png">
+  <link rel="shortcut icon" type="image/x-icon" href="poze/favicon.ico">
+
+  <!-- Apple / PWA -->
+  <link rel="apple-touch-icon" href="poze/apple-touch-icon.png">
+  <link rel="manifest" href="poze/site.webmanifest">
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS specific paginii de coș -->
+  <style>
+    body.page-cos main{
+      padding:40px 0 56px;
+    }
+
+    .cart-shell{
+      padding:20px 0 8px;
+    }
+
+    .cart-header{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      margin-bottom:22px;
+    }
+
+    .cart-kicker{
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      font-size:.8rem;
+      color:#d4d4d4;
+    }
+
+    .cart-title{
+      margin:0;
+      font-size:clamp(26px,4vw,32px);
+      font-weight:820;
+      background:linear-gradient(90deg,#fef6dd,#f1d48a,#e1c176);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      text-shadow:0 8px 30px rgba(0,0,0,.8);
+    }
+
+    .cart-subtitle{
+      margin:0;
+      color:#d0d0d0;
+      font-size:.98rem;
+      max-width:46rem;
+    }
+
+    .cart-layout{
+      display:grid;
+      grid-template-columns:minmax(0,1.6fr) minmax(0,0.9fr);
+      gap:26px;
+      align-items:flex-start;
+    }
+
+    @media(max-width:960px){
+      .cart-layout{
+        grid-template-columns:1fr;
+      }
+    }
+
+    /* Lista de produse */
+    .cart-box{
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.06);
+      background:rgba(9,11,18,.96);
+      box-shadow:0 18px 40px rgba(0,0,0,.85);
+      padding:14px 14px 10px;
+    }
+
+    .cart-list-header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:10px;
+      gap:10px;
+    }
+
+    .cart-list-header h2{
+      margin:0;
+      font-size:.9rem;
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      color:#f5f5f5;
+    }
+
+    .cart-clear-btn{
+      border-radius:999px;
+      border:1px dashed rgba(239,68,68,.7);
+      background:transparent;
+      color:#fecaca;
+      font-size:.8rem;
+      padding:5px 10px;
+      cursor:pointer;
+    }
+
+    .cart-clear-btn:hover{
+      background:rgba(239,68,68,.12);
+      box-shadow:0 10px 26px rgba(0,0,0,.7);
+    }
+
+    .cart-empty{
+      padding:18px 10px 20px;
+      text-align:center;
+      color:#d4d4d4;
+      font-size:.95rem;
+    }
+
+    .cart-empty strong{
+      display:block;
+      margin-bottom:4px;
+      font-size:1.02rem;
+    }
+
+    .cart-items{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin:2px 0 0;
+    }
+
+    .cart-item{
+      display:grid;
+      grid-template-columns:minmax(0,2.3fr) minmax(0,0.9fr) minmax(0,0.9fr) auto;
+      gap:10px;
+      align-items:center;
+      padding:9px 10px;
+      border-radius:14px;
+      background:rgba(5,7,12,.96);
+      border:1px solid rgba(255,255,255,.05);
+    }
+
+    @media(max-width:720px){
+      .cart-item{
+        grid-template-columns:minmax(0,1.9fr) minmax(0,0.8fr);
+        grid-template-rows:auto auto;
+        grid-auto-flow:row;
+      }
+      .cart-item-price,
+      .cart-item-qty-wrap,
+      .cart-item-total{
+        justify-self:flex-start;
+      }
+    }
+
+    .cart-item-main{
+      display:flex;
+      flex-direction:column;
+      gap:3px;
+    }
+
+    .cart-item-name{
+      font-size:.98rem;
+      font-weight:600;
+      color:#f7f7f7;
+    }
+
+    .cart-item-meta{
+      font-size:.85rem;
+      color:#b9b9b9;
+    }
+
+    .cart-item-meta span+span::before{
+      content:"•";
+      margin:0 6px;
+      color:#6b7280;
+    }
+
+    .cart-item-price{
+      font-size:.95rem;
+      font-weight:600;
+      color:#e5e5e5;
+    }
+
+    .cart-item-qty-wrap{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+      font-size:.8rem;
+      color:#c7c7c7;
+    }
+
+    .cart-item-qty-inner{
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+
+    .cart-qty-btn{
+      width:26px;
+      height:26px;
+      border-radius:999px;
+      border:1px solid rgba(217,183,107,.65);
+      background:transparent;
+      color:#f3f3f3;
+      font-size:.9rem;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .cart-qty-btn:hover{
+      background:rgba(217,183,107,.12);
+    }
+
+    .cart-qty-input{
+      width:48px;
+      border-radius:10px;
+      border:1px solid rgba(217,183,107,.45);
+      background:#05070c;
+      color:#f9f9f9;
+      padding:4px 8px;
+      font:inherit;
+      text-align:center;
+      box-shadow:0 10px 25px rgba(0,0,0,.7);
+    }
+
+    .cart-item-total{
+      font-size:.95rem;
+      font-weight:650;
+      color:#f1d48a;
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+      align-items:flex-end;
+    }
+
+    .cart-remove-btn{
+      border-radius:999px;
+      border:1px solid rgba(248,113,113,.7);
+      background:transparent;
+      color:#fecaca;
+      font-size:.76rem;
+      padding:4px 8px;
+      cursor:pointer;
+      align-self:flex-start;
+    }
+
+    .cart-remove-btn:hover{
+      background:rgba(248,113,113,.12);
+    }
+
+    /* Col dreapta – sumar */
+    .cart-summary{
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.06);
+      background:rgba(9,11,18,.96);
+      box-shadow:0 18px 40px rgba(0,0,0,.85);
+      padding:16px 16px 14px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    .cart-summary h2{
+      margin:0 0 4px;
+      font-size:.9rem;
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      color:#f5f5f5;
+    }
+
+    .cart-summary-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      font-size:.9rem;
+      color:#e5e5e5;
+    }
+
+    .cart-summary-row strong{
+      font-weight:650;
+    }
+
+    .cart-total-amount{
+      font-size:1.1rem;
+      font-weight:800;
+      color:#f1d48a;
+    }
+
+    .cart-note{
+      font-size:.82rem;
+      color:#a3a3a3;
+      margin-top:2px;
+    }
+
+    .cart-actions{
+      margin-top:10px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+
+    .cart-wa-btn{
+      padding:10px 14px;
+      border-radius:14px;
+      border:1px solid #25d366;
+      background:linear-gradient(180deg,#1e5e39,#123b24);
+      color:#f8fff9;
+      font-size:.9rem;
+      font-weight:750;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      cursor:pointer;
+      box-shadow:0 14px 40px rgba(0,0,0,.85);
+    }
+
+    .cart-wa-btn svg{
+      width:18px;
+      height:18px;
+    }
+
+    .cart-wa-btn:hover{
+      box-shadow:0 0 0 2px rgba(37,211,102,.55);
+    }
+
+    .cart-back-link{
+      margin-top:2px;
+      font-size:.85rem;
+      color:#e5e5e5;
+    }
+
+    .cart-back-link a{
+      color:var(--gold,#d9b76b);
+      text-decoration:none;
+    }
+
+    .cart-back-link a:hover{
+      text-decoration:underline;
+    }
+
+    @media(max-width:600px){
+      .cart-summary{
+        margin-top:2px;
+      }
+    }
+  </style>
+</head>
+<body id="top" class="page-brand page-cos">
+
+  <!-- HEADER -->
+  <header class="site" aria-label="Navigație principală">
+    <div class="container bar">
+      <a class="brand" href="./" aria-label="YNS Brend — Acasă">
+        <img src="poze/logo-yns.avif" alt="YNS Brend" />
+        <span class="name">YNS BREND</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Deschide meniul principal">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Meniu principal">
+        <ul>
+          <li><a href="./">Acasă</a></li>
+          <li><a href="haine-de-brand.html">Colecții selectate</a></li>
+          <li><a href="brand-propriu.html">YNS Brend</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="right">
+        <a class="cart" href="cos.html" aria-label="Coș de cumpărături">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 7h13l-1.5 9.5a2 2 0 0 1-2 1.7H9.4a2 2 0 0 1-2-1.6L5 3H2" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="10" cy="21" r="1.5" fill="currentColor"/>
+            <circle cx="18" cy="21" r="1.5" fill="currentColor"/>
+          </svg>
+          <span class="badge" aria-live="polite">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="cart-shell">
+      <div class="container">
+        <div class="cart-header">
+          <p class="cart-kicker">Coșul tău</p>
+          <h1 class="cart-title">Produse selectate</h1>
+          <p class="cart-subtitle">
+            Aici vezi produsele pe care le-ai adăugat în coș. Poți modifica cantitatea,
+            poți șterge produse și poți trimite rapid comanda pe WhatsApp.
+          </p>
+        </div>
+
+        <div class="cart-layout">
+          <!-- STÂNGA: LISTA PRODUSELOR -->
+          <div class="cart-box">
+            <div class="cart-list-header">
+              <h2>Produsele din coș</h2>
+              <button type="button" class="cart-clear-btn" id="cart-clear-btn">
+                Golește coșul
+              </button>
+            </div>
+
+            <div id="cart-empty" class="cart-empty" hidden>
+              <strong>Coșul tău este gol.</strong>
+              Poți reveni la <a href="haine-de-brand.html" style="color:var(--gold,#d9b76b);text-decoration:none;">colecțiile selectate</a> și să adaugi produse.
+            </div>
+
+            <div id="cart-items" class="cart-items">
+              <!-- rândurile de produse se generează din JavaScript -->
+            </div>
+          </div>
+
+          <!-- DREAPTA: SUMAR -->
+          <aside class="cart-summary">
+            <h2>Sumar comandă</h2>
+
+            <div class="cart-summary-row">
+              <span>Produse în coș</span>
+              <span id="cart-items-count">0</span>
+            </div>
+
+            <div class="cart-summary-row">
+              <span>Total produse</span>
+              <span id="cart-subtotal" class="cart-total-amount">0 LEI</span>
+            </div>
+
+            <p class="cart-note">
+              Livrarea și detaliile de plată se stabilesc împreună pe WhatsApp, în funcție de adresă și cantități.
+            </p>
+
+            <div class="cart-actions">
+              <button type="button" class="cart-wa-btn" id="cart-wa-btn">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <path fill="currentColor" d="M16 3C9.4 3 4 8.2 4 14.7c0 2.6.9 5 2.4 7L4 29l7.5-2.3c1.9 1 4.1 1.5 6.5 1.5 6.6 0 12-5.2 12-11.7C30 8.2 24.6 3 18 3h-2zm0 2c5.5 0 10 4.2 10 9.7S21.5 24.4 16 24.4c-2.1 0-4-.6-5.6-1.6l-.4-.2-4.5 1.4 1.5-4.2-.3-.4C5.7 18 5 16.4 5 14.7 5 9.2 10.5 5 16 5zm-3.1 4.2c-.3 0-.8.1-1.2.6-.3.4-1.1 1-1.1 2.5 0 1.5 1.1 2.9 1.2 3.1.2.3 2.2 3.4 5.2 4.7 2.6 1.1 3.1.9 3.7.9.6 0 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.7-.4-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.5-.2-.7.2-.2.4-.8 1.2-1 1.4-.2.2-.4.2-.8 0-.4-.2-1.6-.6-3-2-1.1-1.1-1.8-2.3-2-2.7-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.5.2-.1.2-.2.3-.4.1-.2.1-.3 0-.5-.1-.2-.9-2.2-1.2-2.8-.2-.5-.5-.5-.7-.5z"/>
+                </svg>
+                Trimite comanda pe WhatsApp
+              </button>
+
+              <p class="cart-back-link">
+                Sau continuă cumpărăturile din <a href="haine-de-brand.html">Colecții selectate</a>.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site" id="contact">
+    <div class="container">
+      <div class="fcols">
+
+        <div>
+          <div class="brand" style="margin-bottom:8px">
+            <img src="poze/logo-yns.avif" alt="YNS Brend" loading="lazy" decoding="async" />
+            <span class="name">YNS BREND</span>
+          </div>
+          <p style="color:#cfcfcf; max-width:42ch">
+            Magazin de haine pentru fiecare zi — colecții selectate și colecții proprii,
+            în stilul YNS Brend.
+          </p>
+        </div>
+
+        <div>
+          <h4>Asistență</h4>
+          <ul>
+            <li><a href="#">Întrebări frecvente</a></li>
+            <li><a href="#">Politică de retur</a></li>
+            <li><a href="#">Termeni &amp; condiții</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@ynsbrend.ro">contact@ynsbrend.ro</a></li>
+            <li><a href="tel:+40728055940">0728 055 940</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        <small>© <span id="y"></span> YNS Brend. Toate drepturile rezervate.</small>
+        <small>Design base: dark &amp; gold UI.</small>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- WhatsApp support floating icon -->
+  <a href="https://wa.me/40728055940" class="wa-support" aria-label="Suport WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="currentColor" d="M16 3C9.4 3 4 8.2 4 14.7c0 2.6.9 5 2.4 7L4 29l7.5-2.3c1.9 1 4.1 1.5 6.5 1.5 6.6 0 12-5.2 12-11.7C30 8.2 24.6 3 18 3h-2zm0 2c5.5 0 10 4.2 10 9.7S21.5 24.4 16 24.4c-2.1 0-4-.6-5.6-1.6l-.4-.2-4.5 1.4 1.5-4.2-.3-.4C5.7 18 5 16.4 5 14.7 5 9.2 10.5 5 16 5zm-3.1 4.2c-.3 0-.8.1-1.2.6-.3.4-1.1 1-1.1 2.5 0 1.5 1.1 2.9 1.2 3.1.2.3 2.2 3.4 5.2 4.7 2.6 1.1 3.1.9 3.7.9.6 0 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.7-.4-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.5-.2-.7.2-.2.4-.8 1.2-1 1.4-.2.2-.4.2-.8 0-.4-.2-1.6-.6-3-2-1.1-1.1-1.8-2.3-2-2.7-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.5.2-.1.2-.2.3-.4.1-.2.1-.3 0-.5-.1-.2-.9-2.2-1.2-2.8-.2-.5-.5-.5-.7-.5z"/>
+    </svg>
+  </a>
+
+  <script>
+    // ===== Utilitare coș (folosite și pentru badge) =====
+    function getCart(){
+      try{
+        return JSON.parse(localStorage.getItem('cart') || '[]');
+      }catch(e){
+        return [];
+      }
+    }
+
+    function setCart(cart){
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    function updateCartBadge(){
+      const badge = document.querySelector('.cart .badge');
+      if(!badge) return;
+      const cart = getCart();
+      const totalQty = cart.reduce((sum, item) => sum + (item.qty || 0), 0);
+      badge.textContent = totalQty;
+    }
+
+    // ===== Nav mobil =====
+    const navToggle = document.querySelector('.nav-toggle');
+    const bodyEl = document.body;
+    const primaryNav = document.getElementById('primary-nav');
+
+    if (navToggle && primaryNav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = bodyEl.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      primaryNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          bodyEl.classList.remove('nav-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // ===== Year in footer =====
+    const yearSpan = document.getElementById('y');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+
+    // ===== Elemente coș =====
+    const WHATSAPP_NUMBER = '40728055940';
+
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartEmptyEl       = document.getElementById('cart-empty');
+    const cartItemsCountEl  = document.getElementById('cart-items-count');
+    const cartSubtotalEl    = document.getElementById('cart-subtotal');
+    const cartClearBtn      = document.getElementById('cart-clear-btn');
+    const cartWaBtn         = document.getElementById('cart-wa-btn');
+
+    function formatPrice(value){
+      return `${value} LEI`;
+    }
+
+    function renderCart(){
+      const cart = getCart();
+      cartItemsContainer.innerHTML = '';
+
+      if(!cart.length){
+        cartEmptyEl.hidden = false;
+        cartItemsCountEl.textContent = '0';
+        cartSubtotalEl.textContent   = '0 LEI';
+        updateCartBadge();
+        return;
+      }
+
+      cartEmptyEl.hidden = true;
+
+      let totalItems = 0;
+      let subtotal   = 0;
+
+      cart.forEach((item, index) => {
+        const lineTotal = item.price * item.qty;
+        totalItems += item.qty;
+        subtotal   += lineTotal;
+
+        const row = document.createElement('div');
+        row.className = 'cart-item';
+        row.dataset.index = index.toString();
+
+        row.innerHTML = `
+          <div class="cart-item-main">
+            <div class="cart-item-name">${item.name}</div>
+            <div class="cart-item-meta">
+              <span>Mărime: ${item.size}</span>
+              <span>Cod produs: ${item.id}</span>
+            </div>
+          </div>
+          <div class="cart-item-price">
+            ${formatPrice(item.price)}
+          </div>
+          <div class="cart-item-qty-wrap">
+            <span>Cantitate</span>
+            <div class="cart-item-qty-inner">
+              <button type="button" class="cart-qty-btn" data-action="minus">−</button>
+              <input type="number" class="cart-qty-input" min="1" value="${item.qty}">
+              <button type="button" class="cart-qty-btn" data-action="plus">+</button>
+            </div>
+          </div>
+          <div class="cart-item-total">
+            ${formatPrice(lineTotal)}
+            <button type="button" class="cart-remove-btn">Șterge</button>
+          </div>
+        `;
+
+        cartItemsContainer.appendChild(row);
+      });
+
+      cartItemsCountEl.textContent = String(totalItems);
+      cartSubtotalEl.textContent   = formatPrice(subtotal);
+      updateCartBadge();
+    }
+
+    function handleQtyChange(index, newQty){
+      const cart = getCart();
+      if(!cart[index]) return;
+      const qty = Math.max(1, newQty || 1);
+      cart[index].qty = qty;
+      setCart(cart);
+      renderCart();
+    }
+
+    function handleRemove(index){
+      const cart = getCart();
+      if(!cart[index]) return;
+      cart.splice(index,1);
+      setCart(cart);
+      renderCart();
+    }
+
+    // Delegare evenimente pe lista de produse
+    if(cartItemsContainer){
+      cartItemsContainer.addEventListener('click', (e) => {
+        const target = e.target;
+        const row = target.closest('.cart-item');
+        if(!row) return;
+        const index = parseInt(row.dataset.index,10);
+        if(Number.isNaN(index)) return;
+
+        if(target.classList.contains('cart-remove-btn')){
+          handleRemove(index);
+          return;
+        }
+
+        if(target.classList.contains('cart-qty-btn')){
+          const action = target.getAttribute('data-action');
+          const input  = row.querySelector('.cart-qty-input');
+          if(!input) return;
+          let current = parseInt(input.value, 10) || 1;
+          if(action === 'minus') current = Math.max(1, current - 1);
+          if(action === 'plus')  current = current + 1;
+          handleQtyChange(index, current);
+        }
+      });
+
+      cartItemsContainer.addEventListener('change', (e) => {
+        const target = e.target;
+        if(!target.classList.contains('cart-qty-input')) return;
+        const row = target.closest('.cart-item');
+        if(!row) return;
+        const index = parseInt(row.dataset.index,10);
+        if(Number.isNaN(index)) return;
+        const newQty = parseInt(target.value,10) || 1;
+        handleQtyChange(index, newQty);
+      });
+    }
+
+    // Golește coșul
+    if(cartClearBtn){
+      cartClearBtn.addEventListener('click', () => {
+        const cart = getCart();
+        if(!cart.length) return;
+        if(!confirm('Sigur vrei să golești coșul?')) return;
+        setCart([]);
+        renderCart();
+      });
+    }
+
+    // Trimite comanda pe WhatsApp
+    if(cartWaBtn){
+      cartWaBtn.addEventListener('click', () => {
+        const cart = getCart();
+        if(!cart.length){
+          alert('Coșul este gol. Adaugă produse înainte de a trimite comanda.');
+          return;
+        }
+        const total = cart.reduce((sum, p) => sum + p.price * p.qty, 0);
+        const totalItems = cart.reduce((sum, p) => sum + p.qty, 0);
+
+        const lines = cart.map((p, idx) => {
+          return `${idx+1}. ${p.name} (cod ${p.id}) – mărime ${p.size}, cantitate ${p.qty}, ${p.price} LEI/buc`;
+        }).join('\n');
+
+        const message =
+`Bună! Aș vrea să plasez o comandă de pe YNS Brend, din coș:
+
+${lines}
+
+Total produse: ${totalItems}
+Total estimat: ${total} LEI
+
+Te rog să-mi confirmi disponibilitatea pe mărimi și detaliile de livrare.`;
+
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+        window.open(url,'_blank');
+      });
+    }
+
+    // Inițializare
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCart();
+      updateCartBadge();
+    });
+  </script>
+</body>
+</html>

@@ -14,9 +14,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="poze/og-yns.jpg" />
 
-  <!-- Favicon & icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="poze/favicon-32.png">
+  <!-- Favicon / logo tab -->
+  <link rel="icon" type="image/svg+xml" href="poze/favicon.svg">
+  <link rel="alternate icon" type="image/png" sizes="96x96" href="poze/favicon-96x96.png">
+  <link rel="shortcut icon" type="image/x-icon" href="poze/favicon.ico">
+
+  <!-- Apple / PWA -->
   <link rel="apple-touch-icon" href="poze/apple-touch-icon.png">
+  <link rel="manifest" href="poze/site.webmanifest">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="haine-de-brand.css">
@@ -188,12 +193,18 @@
       </header>
 
       <div class="product-grid" id="product-grid">
-        <!-- PRODUS 1 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="329" data-keywords="trening dama nike negru trening dama set hanorac pantaloni">
-          <a href="produs-trening-nke.html">
+
+        <!-- CARD 1 – Trening NKE catifea damă -->
+        <article id="colectii-1" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="120"
+                 data-keywords="trening dama nike catifea verde set hanorac pantaloni">
+          <a href="1.html">
             <figure class="product-media">
               <img src="poze/brand/colectii-1.avif"
-                   alt="Trening NKE negru pentru damă"
+                   alt="Trening NKE negru din catifea pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -201,23 +212,28 @@
               <h2 class="product-title">Trening NKE negru</h2>
               <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">329 lei</span>
-                <span class="product-sizes">M–XL</span>
+                <span class="product-price">120 lei</span>
+                <span class="product-sizes">XS, S, M, L</span>
               </div>
               <p class="product-info">
-                Trening de damă, în nuanță închisă, cu hanorac și pantaloni din material gros. Croi lejer, ideal pentru ținute casual de toamnă-iarnă.
+                Trening de damă din catifea fină, cu hanorac cu buzunar mare frontal și pantaloni conici. Nuanță închisă, perfectă pentru ținute comode, dar cu aspect premium.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 2 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="459" data-keywords="trening dama adidas negru dungi trening ADS black">
-          <a href="produs-trening-ads-black.html">
+        <!-- CARD 2 – Trening ADS Black bumbac damă -->
+        <article id="colectii-2" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="160"
+                 data-keywords="trening dama adidas negru bumbac dungi ADS black">
+          <a href="2.html">
             <figure class="product-media">
               <img src="poze/brand/colectii-2.avif"
-                   alt="Trening ADS Black damă"
+                   alt="Trening ADS Black din bumbac pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -225,71 +241,28 @@
               <h2 class="product-title">Trening ADS Black</h2>
               <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">459 lei</span>
-                <span class="product-sizes">S–L</span>
+                <span class="product-price">160 lei</span>
+                <span class="product-sizes">M, L, XL</span>
               </div>
               <p class="product-info">
-                Trening negru de damă, cu dungi laterale și fermoar metalic. Potrivit atât pentru ținute sport, cât și pentru ieșiri în oraș.
+                Trening din bumbac, cu dungi albe pe lateral și hanorac cu fermoar. Model clasic de brand, de purtat atât la ținute sport, cât și la ieșiri în oraș.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 3 -->
-        <article class="product-card" data-product data-category="geaca" data-gender="barbati" data-price="249" data-keywords="geaca barbati arm ex groasa matlasata">
-          <a href="produs-geaca-arm-ex.html">
+        <!-- CARD 3 – Trening KRL LAGE bumbac damă -->
+        <article id="colectii-3" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="300"
+                 data-keywords="trening dama karl bumbac negru imprimeu">
+          <a href="3.html">
             <figure class="product-media">
               <img src="poze/brand/colectii-3.avif"
-                   alt="Geacă ARM EX pentru bărbați"
-                   loading="lazy"
-                   decoding="async">
-            </figure>
-            <div class="product-body">
-              <h2 class="product-title">Geacă ARM EX</h2>
-              <p class="product-meta">Geacă · Bărbați</p>
-              <div class="product-price-row">
-                <span class="product-price">249 lei</span>
-                <span class="product-sizes">M–XXL</span>
-              </div>
-              <p class="product-info">
-                Geacă matlasată cu glugă detașabilă și buzunare laterale. Bună pentru temperaturi de 5–10°C, de purtat zilnic.
-              </p>
-              <span class="product-cta">Detalii produs</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- PRODUS 4 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="279" data-keywords="trening dama roz adidas trening ADS roz">
-          <a href="produs-trening-ads-roz.html">
-            <figure class="product-media">
-              <img src="poze/brand/colectii-4.avif"
-                   alt="Trening ADS roz damă"
-                   loading="lazy"
-                   decoding="async">
-            </figure>
-            <div class="product-body">
-              <h2 class="product-title">Trening ADS roz</h2>
-              <p class="product-meta">Trening · Damă</p>
-              <div class="product-price-row">
-                <span class="product-price">279 lei</span>
-                <span class="product-sizes">S–XL</span>
-              </div>
-              <p class="product-info">
-                Trening roz de damă, cu bluza lejeră și pantaloni cu talie înaltă. Nuanță plăcută, perfectă pentru ținute casual feminine.
-              </p>
-              <span class="product-cta">Detalii produs</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- PRODUS 5 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="219" data-keywords="trening dama karl negru trening KRL LAGE">
-          <a href="produs-trening-krl-lage.html">
-            <figure class="product-media">
-              <img src="poze/brand/colectii-5.avif"
-                   alt="Trening KRL LAGE"
+                   alt="Trening KRL LAGE din bumbac pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -297,201 +270,173 @@
               <h2 class="product-title">Trening KRL LAGE</h2>
               <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">219 lei</span>
-                <span class="product-sizes">M–XL</span>
+                <span class="product-price">300 lei</span>
+                <span class="product-sizes">XS, S, M, L, XL</span>
               </div>
               <p class="product-info">
-                Trening de damă cu detalii inspirate Karl, bluza cu fermoar și pantaloni conici. Material confortabil, bun pentru sală sau ieșiri în oraș.
+                Trening de damă din bumbac, cu hanorac cu fermoar și imprimeu pe mânecă, plus pantaloni conici. Material confortabil, bun pentru sală sau ținute de oraș.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 6 -->
-        <article class="product-card" data-product data-category="geaca" data-gender="barbati" data-price="389" data-keywords="geaca barbati the north face groasa neagra">
-          <a href="produs-geaca-the-ndface.html">
+        <!-- CARD 4 – Trening DG bumbac barbati -->
+        <article id="colectii-4" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="barbati"
+                 data-price="160"
+                 data-keywords="trening dama dg bumbac negru hanorac fermoar">
+          <a href="4.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-6.avif"
-                   alt="Geacă The NDFACE"
-                   loading="lazy"
-                   decoding="async">
-            </figure>
-            <div class="product-body">
-              <h2 class="product-title">Geacă The NDFACE</h2>
-              <p class="product-meta">Geacă · Bărbați</p>
-              <div class="product-price-row">
-                <span class="product-price">389 lei</span>
-                <span class="product-sizes">M–XXL</span>
-              </div>
-              <p class="product-info">
-                Geacă groasă cu umplutură și glugă, gândită pentru zile foarte reci. Închidere cu fermoar și capse, cu look de brand.
-              </p>
-              <span class="product-cta">Detalii produs</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- PRODUS 7 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="239" data-keywords="trening dama DG negru trening dolce gab">
-          <a href="produs-trening-dg.html">
-            <figure class="product-media">
-              <img src="poze/brand/colectii-7.avif"
-                   alt="Trening DG damă"
+              <img src="poze/brand/colectii-4.avif"
+                   alt="Trening DG din bumbac pentru barbati"
                    loading="lazy"
                    decoding="async">
             </figure>
             <div class="product-body">
               <h2 class="product-title">Trening DG</h2>
-              <p class="product-meta">Trening · Damă</p>
+              <p class="product-meta">Trening · Barbati</p>
               <div class="product-price-row">
-                <span class="product-price">239 lei</span>
-                <span class="product-sizes">M–XL</span>
+                <span class="product-price">160 lei</span>
+                <span class="product-sizes">S, M, XL, XXL</span>
               </div>
               <p class="product-info">
-                Trening de damă inspirat DG, cu hanorac cu fermoar și pantaloni drepți. Stil simplu, ușor de combinat cu adidași sau bocanci.
+                Trening de barbati din bumbac normal, cu hanorac cu fermoar și pantaloni drepți. Stil simplu, ușor de combinat cu adidași sau bocanci.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 8 -->
-        <article class="product-card" data-product data-category="geaca" data-gender="barbati" data-price="199" data-keywords="geaca barbati moncler lucioasa neagra">
-          <a href="produs-geaca-mncl.html">
+        <!-- CARD 5 – Geacă MNCL scurtă puf natural damă -->
+        <article id="colectii-5" class="product-card"
+                 data-product
+                 data-category="geaca"
+                 data-gender="femei"
+                 data-price="250"
+                 data-keywords="geaca dama moncler puf natural iarna scurta lucioasa">
+          <a href="5.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-8.avif"
-                   alt="Geacă MNCL damă/bărbați"
+              <img src="poze/brand/colectii-5.avif"
+                   alt="Geacă MNCL scurtă cu puf natural pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
             <div class="product-body">
               <h2 class="product-title">Geacă MNCL</h2>
-              <p class="product-meta">Geacă · Bărbați</p>
+              <p class="product-meta">Geacă · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">199 lei</span>
-                <span class="product-sizes">S–L</span>
+                <span class="product-price">250 lei</span>
+                <span class="product-sizes">XS, S, M, L</span>
               </div>
               <p class="product-info">
-                Geacă tip Moncler, cu luciu discret și glugă cu blăniță. Potrivită pentru ținute streetwear de sezon rece.
+                Geacă scurtă de iarnă, tip Moncler, cu puf natural și finisaj lucios. Glugă cu blăniță și croi feminin, ideală pentru zile foarte reci.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 9 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="349" data-keywords="trening dama adidas gros negru dungi">
-          <a href="produs-trening-ads.html">
+        <!-- CARD 6 – Trening ADS Bej bumbac damă -->
+        <article id="colectii-6" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="300"
+                 data-keywords="trening dama adidas bej bumbac gros dungi">
+          <a href="6.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-6.avif"
+                   alt="Trening ADS bej din bumbac pentru damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening ADS Bej</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">300 lei</span>
+                <span class="product-sizes">M, L, XL, XXL</span>
+              </div>
+              <p class="product-info">
+                Trening din bumbac gros, cu hanorac cu glugă și pantaloni cu dungi laterale. Perfect pentru sezonul rece și ținute sport-casual.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- CARD 7 – Geacă MNCL Long puf natural/fas damă -->
+        <article id="colectii-7" class="product-card"
+                 data-product
+                 data-category="geaca"
+                 data-gender="femei"
+                 data-price="250"
+                 data-keywords="geaca lunga dama moncler puf natural fas impermeabil iarna">
+          <a href="7.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-7.avif"
+                   alt="Geacă MNCL lungă cu puf natural pentru damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Geacă MNCL Long</h2>
+              <p class="product-meta">Geacă · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">250 lei</span>
+                <span class="product-sizes">M, L, XL</span>
+              </div>
+              <p class="product-info">
+                Geacă lungă de iarnă, cu puf natural și exterior din fas impermeabil. Cordon în talie și glugă cu blăniță, pentru protecție maximă la frig.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- CARD 8 – Geacă Puffer NF Brown damă -->
+        <article id="colectii-8" class="product-card"
+                 data-product
+                 data-category="geaca"
+                 data-gender="femei"
+                 data-price="200"
+                 data-keywords="geaca dama the north face groasa puffer maro">
+          <a href="8.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-8.avif"
+                   alt="Geacă Puffer NF Brown pentru damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Geacă Puffer NF Brown</h2>
+              <p class="product-meta">Geacă · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">200 lei</span>
+                <span class="product-sizes">S, M, L, XL</span>
+              </div>
+              <p class="product-info">
+                Geacă groasă tip The North Face, cu umplutură voluminoasă și glugă. Nuanță caldă de maro, ideală pentru ținute casual de iarnă.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- CARD 9 – Trening MIU Classic bumbac damă -->
+        <article id="colectii-9" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="150"
+                 data-keywords="trening dama miu bumbac verde casual">
+          <a href="9.html">
             <figure class="product-media">
               <img src="poze/brand/colectii-9.avif"
-                   alt="Trening ADS damă"
-                   loading="lazy"
-                   decoding="async">
-            </figure>
-            <div class="product-body">
-              <h2 class="product-title">Trening ADS</h2>
-              <p class="product-meta">Trening · Damă</p>
-              <div class="product-price-row">
-                <span class="product-price">349 lei</span>
-                <span class="product-sizes">M–XXL</span>
-              </div>
-              <p class="product-info">
-                Trening de damă cu dungi laterale, hanorac cu glugă și pantaloni din material gros. Excelent pentru zilele mai reci.
-              </p>
-              <span class="product-cta">Detalii produs</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- PRODUS 10 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="399" data-keywords="trening dama guess negru trening GUS">
-          <a href="brand-propriu.html#colectii-yns">
-            <figure class="product-media">
-              <img src="poze/brand/colectii-10.avif"
-                   alt="Trening GUS damă"
-                   loading="lazy"
-                   decoding="async">
-            </figure>
-            <div class="product-body">
-              <h2 class="product-title">Trening GUS</h2>
-              <p class="product-meta">Trening · Damă</p>
-              <div class="product-price-row">
-                <span class="product-price">399 lei</span>
-                <span class="product-sizes">S–XL</span>
-              </div>
-              <p class="product-info">
-                Trening de damă inspirat Guess, cu bandă logo pe lateral și croi modern. De purtat la oraș, cu sneakers sau ghete.
-              </p>
-              <span class="product-cta">Detalii produs</span>
-            </div>
-          </a>
-        </article>
-
-       <!-- PRODUS 11 -->
-<article class="product-card"
-         data-product
-         data-category="geaca"
-         data-gender="femei"
-         data-price="319"
-         data-keywords="geaca dama lunga moncler crem calduroasa cordon blana">
-  <a href="produs-trening-cream-soft.html">
-    <figure class="product-media">
-      <img src="poze/brand/colectii-11.avif"
-           alt="Geacă MNCL lungă pentru damă"
-           loading="lazy"
-           decoding="async">
-    </figure>
-    <div class="product-body">
-      <h2 class="product-title">Geacă MNCL Long</h2>
-      <p class="product-meta">Geacă · Damă</p>
-      <div class="product-price-row">
-        <span class="product-price">319 lei</span>
-        <span class="product-sizes">S–XL</span>
-      </div>
-      <p class="product-info">
-        Geacă lungă tip Moncler, cu cordon în talie și glugă cu blăniță. Ține foarte bine de cald și arată elegant peste orice ținută.
-      </p>
-      <span class="product-cta">Detalii produs</span>
-    </div>
-  </a>
-</article>
-<!-- PRODUS 12 -->
-<article class="product-card"
-         data-product
-         data-category="geaca"
-         data-gender="femei"
-         data-price="189"
-         data-keywords="geaca dama puffer the north face maro calduroasa">
-  <a href="produs-geaca-nf-brown.html">
-    <figure class="product-media">
-      <img src="poze/brand/colectii-12.avif"
-           alt="Geacă puffer The North Face pentru damă"
-           loading="lazy"
-           decoding="async">
-    </figure>
-    <div class="product-body">
-      <h2 class="product-title">Geacă Puffer NF Brown</h2>
-      <p class="product-meta">Geacă · Damă</p>
-      <div class="product-price-row">
-        <span class="product-price">189 lei</span>
-        <span class="product-sizes">M–XXL</span>
-      </div>
-      <p class="product-info">
-        Geacă puffer tip The North Face, în nuanță caldă de maro, cu glugă și umplutură călduroasă. Potrivită pentru ținute casual de iarnă.
-      </p>
-      <span class="product-cta">Detalii produs</span>
-    </div>
-  </a>
-</article>
-
-
-        <!-- PRODUS 13 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="129" data-keywords="trening miu dama trening alb-verde">
-          <a href="produs-trening-oversize-alb.html">
-            <figure class="product-media">
-              <img src="poze/brand/colectii-13.avif"
-                   alt="Trening MIU Classic damă"
+                   alt="Trening MIU Classic din bumbac pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -499,77 +444,57 @@
               <h2 class="product-title">Trening MIU Classic</h2>
               <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">129 lei</span>
-                <span class="product-sizes">S–XL</span>
+                <span class="product-price">150 lei</span>
+                <span class="product-sizes">S, M, L</span>
               </div>
               <p class="product-info">
-                Trening de damă inspirat Miu, cu textură plăcută și croi drept. Potrivit pentru ținute comode, dar cu look de brand.
+                Trening de damă din bumbac, cu hanorac cu glugă și pantaloni jogger. Set simplu și comod, de purtat zi de zi.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
-<!-- PRODUS 14 -->
-<article class="product-card"
-         data-product
-         data-category="trening"
-         data-gender="femei"
-         data-price="209"
-         data-keywords="trening dama adidas bleumarin hanorac pantaloni set ADS navy">
-  <a href="produs-trening-ads-navy.html">
-    <figure class="product-media">
-      <img src="poze/brand/colectii-14.avif"
-           alt="Trening ADS bleumarin pentru damă"
-           loading="lazy"
-           decoding="async">
-    </figure>
-    <div class="product-body">
-      <h2 class="product-title">Trening ADS Navy</h2>
-      <p class="product-meta">Trening · Damă</p>
-      <div class="product-price-row">
-        <span class="product-price">209 lei</span>
-        <span class="product-sizes">XS–L</span>
-      </div>
-      <p class="product-info">
-        Trening de damă bleumarin, cu hanorac cu fermoar și pantaloni conici cu buzunare. Set comod, perfect pentru sală, plimbări sau ținute casual.
-      </p>
-      <span class="product-cta">Detalii produs</span>
-    </div>
-  </a>
-</article>
 
-        </article>
-
-        <!-- PRODUS 15 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="279" data-keywords="trening miu crem dama elegant">
-          <a href="produs-geaca-cream-city.html">
+        <!-- CARD 10 – Trening ADS Navy catifea damă -->
+        <article id="colectii-10" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="120"
+                 data-keywords="trening dama adidas bleumarin catifea set hanorac pantaloni">
+          <a href="10.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-15.avif"
-                   alt="Trening MIU Alb damă"
+              <img src="poze/brand/colectii-10.avif"
+                   alt="Trening ADS Navy din catifea pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
             <div class="product-body">
-              <h2 class="product-title">Trening MIU Alb</h2>
+              <h2 class="product-title">Trening ADS Navy</h2>
               <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">279 lei</span>
-                <span class="product-sizes">S–L</span>
+                <span class="product-price">120 lei</span>
+                <span class="product-sizes">XS, S, M, L</span>
               </div>
               <p class="product-info">
-                Trening alb cu textură plăcută și croi wide, inspirat Miu. Perfect pentru ținute light, minimaliste, cu sneakers albi.
+                Trening de damă din catifea fină, bleumarin închis, cu hanorac și pantaloni conici. Arată bine la oraș și este foarte plăcut la purtat.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 16 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="339" data-keywords="trening elegant miu dama bej">
-          <a href="produs-trening-dark-grey.html">
+        <!-- CARD 11 – Trening MIU Elegant tricot damă -->
+        <article id="colectii-11" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="120"
+                 data-keywords="trening dama tricot miu crem elegant pantaloni evazati">
+          <a href="11.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-16.avif"
-                   alt="Trening MIU Elegant damă"
+              <img src="poze/brand/colectii-11.avif"
+                   alt="Trening MIU Elegant tricotat pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -577,23 +502,28 @@
               <h2 class="product-title">Trening MIU Elegant</h2>
               <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">339 lei</span>
-                <span class="product-sizes">M–XXL</span>
+                <span class="product-price">120 lei</span>
+                <span class="product-sizes">XS, S, M</span>
               </div>
               <p class="product-info">
-                Trening elegant de damă, cu pantaloni evazați și bluză cu croi lejer. Nuanță neutră, potrivită pentru ținute smart casual.
+                Set din tricot moale, cu pantaloni evazați și bluză cu croi lejer. Nuanță crem, perfectă pentru ținute smart casual sau outfit-uri de seară comode.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 17 -->
-        <article class="product-card" data-product data-category="tricou" data-gender="femei" data-price="139" data-keywords="trening guess dama negru logo side">
-          <a href="produs-tricou-logo-mini.html">
+        <!-- CARD 12 – Trening GUESS Black bumbac damă -->
+        <article id="colectii-12" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="300"
+                 data-keywords="trening dama guess negru bumbac logo lateral">
+          <a href="12.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-17.avif"
-                   alt="Trening GUESS Black damă"
+              <img src="poze/brand/colectii-12.avif"
+                   alt="Trening GUESS Black din bumbac pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -601,23 +531,28 @@
               <h2 class="product-title">Trening GUESS Black</h2>
               <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">139 lei</span>
-                <span class="product-sizes">S–XL</span>
+                <span class="product-price">300 lei</span>
+                <span class="product-sizes">S, M, L, XL, XXL</span>
               </div>
               <p class="product-info">
-                Trening negru de damă, cu imprimeu logo GUESS pe lateral. Croi modern, de purtat cu adidași și jachete scurte.
+                Trening de damă din bumbac, cu imprimeu logo GUESS pe lateral. Croi modern, de purtat cu adidași și jachete scurte.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 18 -->
-        <article class="product-card" data-product data-category="pantaloni" data-gender="femei" data-price="199" data-keywords="trening moncler rosu dama pufos">
-          <a href="produs-pantaloni-cargo-khaki.html">
+        <!-- CARD 13 – Trening MNCL Red catifea damă -->
+        <article id="colectii-13" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="120"
+                 data-keywords="trening dama rosu moncler catifea pufoasa mncl red">
+          <a href="13.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-18.avif"
-                   alt="Trening MNCL Red damă"
+              <img src="poze/brand/colectii-13.avif"
+                   alt="Trening MNCL Red din catifea pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -625,47 +560,28 @@
               <h2 class="product-title">Trening MNCL Red</h2>
               <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">199 lei</span>
-                <span class="product-sizes">M–XXL</span>
+                <span class="product-price">120 lei</span>
+                <span class="product-sizes">XS, S, L, XL</span>
               </div>
               <p class="product-info">
-                Trening roșu tip Moncler, din material pufos, cu hanorac și pantaloni drepți. Ținută statement, ideală pentru sezon rece.
+                Trening din catifea fină, roșu intens, cu hanorac și pantaloni drepți. Ținută statement, ideală pentru sezonul rece și poze de instagram.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 19 -->
-        <article class="product-card" data-product data-category="hanorac" data-gender="femei" data-price="219" data-keywords="hanorac adidas dama negru simplu">
-          <a href="produs-hanorac-simple-black.html">
+        <!-- CARD 14 – Trening Tommy Cream bumbac damă -->
+        <article id="colectii-14" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="150"
+                 data-keywords="trening dama tommy crem bumbac hanorac lung pantaloni drepti">
+          <a href="14.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-19.avif"
-                   alt="Hanorac Simple Black damă"
-                   loading="lazy"
-                   decoding="async">
-            </figure>
-            <div class="product-body">
-              <h2 class="product-title">Hanorac Simple Black</h2>
-              <p class="product-meta">Hanorac · Damă</p>
-              <div class="product-price-row">
-                <span class="product-price">219 lei</span>
-                <span class="product-sizes">M–XXL</span>
-              </div>
-              <p class="product-info">
-                Hanorac negru de damă, cu logo pe piept și buzunar mare frontal. Se potrivește la blugi, joggeri sau colanți.
-              </p>
-              <span class="product-cta">Detalii produs</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- PRODUS 20 -->
-        <article class="product-card" data-product data-category="trening" data-gender="femei" data-price="309" data-keywords="trening tommy dama crem elegant">
-          <a href="produs-geaca-long-black.html">
-            <figure class="product-media">
-              <img src="poze/brand/colectii-20.avif"
-                   alt="Trening Tommy Cream damă"
+              <img src="poze/brand/colectii-14.avif"
+                   alt="Trening Tommy Cream din bumbac pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -673,71 +589,28 @@
               <h2 class="product-title">Trening Tommy Cream</h2>
               <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">309 lei</span>
-                <span class="product-sizes">S–XL</span>
+                <span class="product-price">150 lei</span>
+                <span class="product-sizes">S, L, XL</span>
               </div>
               <p class="product-info">
-                Trening inspirat Tommy, în nuanță crem, cu hanorac lung și pantaloni drepți. Potrivit pentru ținute de oraș sau birou casual.
+                Trening de damă din bumbac, în nuanță crem, cu hanorac lung și pantaloni drepți. Potrivit pentru ținute de oraș sau birou casual.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 21 -->
-        <article class="product-card" data-product data-category="tricou" data-gender="unisex" data-price="329" data-keywords="fes adidas nike set unisex caciuli iarna">
-          <a href="produs-trening-blush-pink.html">
+        <!-- CARD 15 – Blugi mom fit cu pietre -->
+        <article id="colectii-15" class="product-card"
+                 data-product
+                 data-category="pantaloni"
+                 data-gender="femei"
+                 data-price="140"
+                 data-keywords="blugi dama mom fit full pietre elastici blue">
+          <a href="15.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-21.avif"
-                   alt="Set fesuri Adidas & Nike"
-                   loading="lazy"
-                   decoding="async">
-            </figure>
-            <div class="product-body">
-              <h2 class="product-title">Set fesuri ADS & NKE</h2>
-              <p class="product-meta">Fesuri · Unisex</p>
-              <div class="product-price-row">
-                <span class="product-price">329 lei</span>
-                <span class="product-sizes">XS–L</span>
-              </div>
-              <p class="product-info">
-                Set de două fesuri, unul crem și unul roșu, inspirate Adidas și Nike. Accesorii perfecte pentru completat ținutele de iarnă.
-              </p>
-              <span class="product-cta">Detalii produs</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- PRODUS 22 -->
-        <article class="product-card" data-product data-category="trening" data-gender="barbati" data-price="119" data-keywords="trening hugo barbati negru rosu">
-          <a href="produs-tricou-bej-basic.html">
-            <figure class="product-media">
-              <img src="poze/brand/colectii-22.avif"
-                   alt="Trening HUGO Black bărbați"
-                   loading="lazy"
-                   decoding="async">
-            </figure>
-            <div class="product-body">
-              <h2 class="product-title">Trening HUGO Black</h2>
-              <p class="product-meta">Trening · Bărbați</p>
-              <div class="product-price-row">
-                <span class="product-price">119 lei</span>
-                <span class="product-sizes">S–XL</span>
-              </div>
-              <p class="product-info">
-                Trening negru inspirat Hugo, cu detalii roșii și fermoar la bluză. De purtat la oraș sau în călătorii, cu adidași sau bocanci.
-              </p>
-              <span class="product-cta">Detalii produs</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- PRODUS 23 -->
-        <article class="product-card" data-product data-category="pantaloni" data-gender="femei" data-price="209" data-keywords="blugi mom fit dama albastri talie inalta">
-          <a href="produs-pantaloni-straight-fit.html">
-            <figure class="product-media">
-              <img src="poze/brand/colectii-23.avif"
-                   alt="Blugi Mom Fit Blue damă"
+              <img src="poze/brand/colectii-15.avif"
+                   alt="Blugi Mom Fit Blue cu pietre pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -745,23 +618,28 @@
               <h2 class="product-title">Blugi Mom Fit Blue</h2>
               <p class="product-meta">Pantaloni · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">209 lei</span>
-                <span class="product-sizes">S–L</span>
+                <span class="product-price">140 lei</span>
+                <span class="product-sizes">XS, S, M, L, XL, XXL</span>
               </div>
               <p class="product-info">
-                Blugi mom fit albaștri, cu talie înaltă și croi drept. Se potrivesc cu tricouri, hanorace sau geci scurte.
+                Blugi mom fit elastici, plini de pietre aplicate, cu talie înaltă. Atrage atenția la orice ținută, de purtat cu topuri simple sau hanorace.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 24 -->
-        <article class="product-card" data-product data-category="pantaloni" data-gender="femei" data-price="229" data-keywords="blugi mom fit dama gri talie inalta">
-          <a href="produs-hanorac-light-grey.html">
+        <!-- CARD 16 – Blugi mom fit gri -->
+        <article id="colectii-16" class="product-card"
+                 data-product
+                 data-category="pantaloni"
+                 data-gender="femei"
+                 data-price="140"
+                 data-keywords="blugi dama mom fit gri elastici talie inalta">
+          <a href="16.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-24.avif"
-                   alt="Blugi Mom Fit Grey damă"
+              <img src="poze/brand/colectii-16.avif"
+                   alt="Blugi Mom Fit Grey elastici pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -769,47 +647,28 @@
               <h2 class="product-title">Blugi Mom Fit Grey</h2>
               <p class="product-meta">Pantaloni · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">229 lei</span>
-                <span class="product-sizes">S–XL</span>
+                <span class="product-price">140 lei</span>
+                <span class="product-sizes">S, M, L, XL</span>
               </div>
               <p class="product-info">
-                Blugi mom fit gri, cu talie înaltă și spălare washed. Ideali pentru ținute de oraș, combinați cu pulovere sau hanorace.
+                Blugi mom fit din denim elastic, cu talie înaltă și spălare gri. Se potrivesc cu tricouri simple, pulovere sau hanorace oversized.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 25 -->
-        <article class="product-card" data-product data-category="trening" data-gender="unisex" data-price="359" data-keywords="fesuri tommy hilfiger set unisex rosii">
-          <a href="produs-trening-line-black.html">
+        <!-- CARD 17 – Trening NF Grey bumbac gros bărbați -->
+        <article id="colectii-17" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="barbati"
+                 data-price="180"
+                 data-keywords="trening barbati the north face gri bumbac gros hanorac pantaloni">
+          <a href="17.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-25.avif"
-                   alt="Set fesuri Tommy unisex"
-                   loading="lazy"
-                   decoding="async">
-            </figure>
-            <div class="product-body">
-              <h2 class="product-title">Set fesuri Tommy</h2>
-              <p class="product-meta">Fesuri · Unisex</p>
-              <div class="product-price-row">
-                <span class="product-price">359 lei</span>
-                <span class="product-sizes">S–L</span>
-              </div>
-              <p class="product-info">
-                Set de două fesuri tricotate, în nuanțe puternice, cu logo Tommy. Accente de culoare pentru ținutele de iarnă.
-              </p>
-              <span class="product-cta">Detalii produs</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- PRODUS 26 -->
-        <article class="product-card" data-product data-category="geaca" data-gender="barbati" data-price="329" data-keywords="trening north face barbati gri">
-          <a href="produs-geaca-puffer-green.html">
-            <figure class="product-media">
-              <img src="poze/brand/colectii-26.avif"
-                   alt="Trening NF Grey bărbați"
+              <img src="poze/brand/colectii-17.avif"
+                   alt="Trening NF Grey din bumbac gros pentru bărbați"
                    loading="lazy"
                    decoding="async">
             </figure>
@@ -817,107 +676,214 @@
               <h2 class="product-title">Trening NF Grey</h2>
               <p class="product-meta">Trening · Bărbați</p>
               <div class="product-price-row">
-                <span class="product-price">329 lei</span>
-                <span class="product-sizes">M–XXL</span>
+                <span class="product-price">180 lei</span>
+                <span class="product-sizes">M, L, XL, XXL</span>
               </div>
               <p class="product-info">
-                Trening gri tip The North Face, cu hanorac cu fermoar și pantaloni conici. Material dens, potrivit pentru sezon rece.
+                Trening de bărbați din bumbac gros, tip The North Face, cu hanorac și pantaloni jogger. Perfect pentru zile reci, sală sau ieșiri relaxate în oraș.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 28 -->
-        <article class="product-card" data-product data-category="pantaloni" data-gender="barbati" data-price="179" data-keywords="trening the north face barbati negru high rise">
-          <a href="produs-colanti-high-rise.html">
+        <!-- CARD 18 – Trening Patch Bej, bumbac gros 3 fire -->
+        <article id="colectii-18" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="250"
+                 data-keywords="trening dama bej bumbac gros patch hanorac fermoar pantaloni largi">
+          <a href="18.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-28.avif"
-                   alt="Trening NF Black Warm bărbați"
+              <img src="poze/brand/colectii-18.avif"
+                   alt="Trening Patch Bej din bumbac gros pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
             <div class="product-body">
-              <h2 class="product-title">Trening NF Black Warm</h2>
-              <p class="product-meta">Trening · Bărbați</p>
+              <h2 class="product-title">Trening Patch Bej</h2>
+              <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">179 lei</span>
-                <span class="product-sizes">XS–L</span>
+                <span class="product-price">250 lei</span>
+                <span class="product-sizes">M, L, XL, XXL</span>
               </div>
               <p class="product-info">
-                Trening negru The North Face, cu interior călduros și croi confortabil. Bun pentru zile friguroase și ținute sport.
+                Trening de damă din bumbac gros, 3 fire, cu hanorac scurt cu fermoar și pantaloni largi cu inserții patch. Set comod, cu aspect modern, perfect pentru ținute de oraș.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 29 -->
-        <article class="product-card" data-product data-category="hanorac" data-gender="unisex" data-price="239" data-keywords="fes hugo tommy unisex set negru">
-          <a href="produs-hanorac-zip-blush.html">
+        <!-- CARD 19 – Trening Patch Black, bumbac gros 3 fire -->
+        <article id="colectii-19" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="250"
+                 data-keywords="trening dama negru bumbac gros patch hanorac fermoar pantaloni largi">
+          <a href="19.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-29.avif"
-                   alt="Set fesuri Hugo & Tommy unisex"
+              <img src="poze/brand/colectii-19.avif"
+                   alt="Trening Patch Black din bumbac gros pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
             <div class="product-body">
-              <h2 class="product-title">Set fesuri Hugo & Tommy</h2>
-              <p class="product-meta">Fesuri · Unisex</p>
+              <h2 class="product-title">Trening Patch Black</h2>
+              <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">239 lei</span>
-                <span class="product-sizes">S–L</span>
+                <span class="product-price">250 lei</span>
+                <span class="product-sizes">S, M, L, XL</span>
               </div>
               <p class="product-info">
-                Set de două fesuri negre, cu patch Hugo și Tommy. Accesorii simple, dar vizibile, pentru orice outfit de iarnă.
+                Trening de damă din bumbac gros, 3 fire, cu efect de benzi aplicate și pantaloni wide leg. Ideal pentru outfit-uri all black cu vibe de designer.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 30 -->
-        <article class="product-card" data-product data-category="trening" data-gender="unisex" data-price="369" data-keywords="fes nike calvin klein unisex set negru">
-          <a href="produs-trening-royal-blue.html">
+        <!-- CARD 20 – Trening DG Basic bumbac gros -->
+        <article id="colectii-20" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="160"
+                 data-keywords="trening dama dg basic bumbac gros negru hanorac logo">
+          <a href="20.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-30.avif"
-                   alt="Set fesuri Nike & CK unisex"
+              <img src="poze/brand/colectii-20.avif"
+                   alt="Trening DG Basic din bumbac gros pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
             <div class="product-body">
-              <h2 class="product-title">Set fesuri Nike & CK</h2>
-              <p class="product-meta">Fesuri · Unisex</p>
+              <h2 class="product-title">Trening DG Basic</h2>
+              <p class="product-meta">Trening · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">369 lei</span>
-                <span class="product-sizes">M–XXL</span>
+                <span class="product-price">160 lei</span>
+                <span class="product-sizes">XS, S, M, L</span>
               </div>
               <p class="product-info">
-                Set de fesuri negre, cu logo Nike și Calvin Klein. Se potrivesc la ținute full black sau combinat cu jachete colorate.
+                Trening de damă din bumbac gros, cu hanorac cu glugă și logo DG pe piept și pantaloni jogger. Set simplu și călduros, de purtat zilnic.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
           </a>
         </article>
 
-        <!-- PRODUS 31 -->
-        <article class="product-card" data-product data-category="pantaloni" data-gender="femei" data-price="349" data-keywords="pantaloni piele dama negri skinny">
-          <a href="produs-geaca-elegant-beige.html">
+        <!-- CARD 21 – Geacă MNCL Lady -->
+        <article id="colectii-21" class="product-card"
+                 data-product
+                 data-category="geaca"
+                 data-gender="femei"
+                 data-price="300"
+                 data-keywords="geaca dama moncler neagra puf iarna mncl lady">
+          <a href="21.html">
             <figure class="product-media">
-              <img src="poze/brand/colectii-31.avif"
-                   alt="Pantaloni din piele neagră pentru damă"
+              <img src="poze/brand/colectii-21.avif"
+                   alt="Geacă MNCL Lady neagră pentru damă"
                    loading="lazy"
                    decoding="async">
             </figure>
             <div class="product-body">
-              <h2 class="product-title">Pantaloni din piele neagră</h2>
-              <p class="product-meta">Pantaloni · Damă</p>
+              <h2 class="product-title">Geacă MNCL Lady</h2>
+              <p class="product-meta">Geacă · Damă</p>
               <div class="product-price-row">
-                <span class="product-price">349 lei</span>
-                <span class="product-sizes">S–L</span>
+                <span class="product-price">300 lei</span>
+                <span class="product-sizes">S, L, XL, XXL</span>
               </div>
               <p class="product-info">
-                Pantaloni din imitație de piele neagră, cu talie medie și croi drept. Potriviți pentru ținute de seară sau look-uri mai îndrăznețe.
+                Geacă de damă tip Moncler, cu puf și glugă, croială dreaptă și inscripții pe marginea fermoarului. Ține foarte bine de cald și arată bine atât cu jeans, cât și cu trening.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- CARD 22 – Set Tricot MIU Verde -->
+        <article id="colectii-22" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="120"
+                 data-keywords="set tricot miu verde pantaloni largi bluza logo pietre">
+          <a href="22.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-22.avif"
+                   alt="Set tricot MIU verde pentru damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Set Tricot MIU Verde</h2>
+              <p class="product-meta">Set tricot · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">120 lei</span>
+                <span class="product-sizes">M, L, XL</span>
+              </div>
+              <p class="product-info">
+                Set tricotat format din pantaloni largi și bluză cu guler la baza gâtului, cu logo MIU din pietre. Ușor elastic, foarte plăcut pe piele, perfect pentru ținute de interior sau ieșiri lejere.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- CARD 23 – Trening HUGO Red Logo -->
+        <article id="colectii-23" class="product-card"
+                 data-product
+                 data-category="trening"
+                 data-gender="femei"
+                 data-price="150"
+                 data-keywords="trening dama hugo bumbac negru logo rosu hanorac pantaloni">
+          <a href="23.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-23.avif"
+                   alt="Trening HUGO cu logo roșu pentru damă"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Trening HUGO Red Logo</h2>
+              <p class="product-meta">Trening · Damă</p>
+              <div class="product-price-row">
+                <span class="product-price">150 lei</span>
+                <span class="product-sizes">M, L, XL</span>
+              </div>
+              <p class="product-info">
+                Trening de damă din bumbac, cu hanorac cu buzunar tip marsupiu și logo HUGO roșu față-spate. Pantaloni conici, cu talie elastică – set ideal pentru ținute street.
+              </p>
+              <span class="product-cta">Detalii produs</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- CARD 24 – Geacă MNCL Man Long -->
+        <article id="colectii-24" class="product-card"
+                 data-product
+                 data-category="geaca"
+                 data-gender="barbati"
+                 data-price="300"
+                 data-keywords="geaca barbati moncler lunga neagra puf iarna">
+          <a href="24.html">
+            <figure class="product-media">
+              <img src="poze/brand/colectii-24.avif"
+                   alt="Geacă MNCL lungă pentru bărbați"
+                   loading="lazy"
+                   decoding="async">
+            </figure>
+            <div class="product-body">
+              <h2 class="product-title">Geacă MNCL Man Long</h2>
+              <p class="product-meta">Geacă · Bărbați</p>
+              <div class="product-price-row">
+                <span class="product-price">300 lei</span>
+                <span class="product-sizes">S, M, XL, XXL</span>
+              </div>
+              <p class="product-info">
+                Geacă lungă de bărbați, tip Moncler, cu puf și interior călduros. Se potrivește foarte bine peste hanorace sau pulovere, pentru ierni cu temperaturi scăzute.
               </p>
               <span class="product-cta">Detalii produs</span>
             </div>
@@ -925,6 +891,7 @@
         </article>
 
       </div>
+
     </section>
   </main>
 
@@ -953,20 +920,11 @@
         </div>
 
         <div>
-          <h4>Contul meu</h4>
-          <ul>
-            <li><a href="#">Autentificare</a></li>
-            <li><a href="#">Comenzile mele</a></li>
-            <li><a href="#">Favorite</a></li>
-          </ul>
-        </div>
-
-        <div>
           <h4>Contact</h4>
           <ul>
             <li><a href="mailto:contact@ynsbrend.ro">contact@ynsbrend.ro</a></li>
-            <li><a href="tel:+40700000000">+40 700 000 000</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li><a href="tel:+40728055940">0728 055 940</a></li>
+            <li><a href="#">TikTok</a></li>
           </ul>
         </div>
 
@@ -980,7 +938,30 @@
     </div>
   </footer>
 
+  <!-- WhatsApp support floating icon -->
+  <a href="https://wa.me/40728055940" class="wa-support" aria-label="Suport WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="currentColor" d="M16 3C9.4 3 4 8.2 4 14.7c0 2.6.9 5 2.4 7L4 29l7.5-2.3c1.9 1 4.1 1.5 6.5 1.5 6.6 0 12-5.2 12-11.7C30 8.2 24.6 3 18 3h-2zm0 2c5.5 0 10 4.2 10 9.7S21.5 24.4 16 24.4c-2.1 0-4-.6-5.6-1.6l-.4-.2-4.5 1.4 1.5-4.2-.3-.4C5.7 18 5 16.4 5 14.7 5 9.2 10.5 5 16 5zm-3.1 4.2c-.3 0-.8.1-1.2.6-.3.4-1.1 1-1.1 2.5 0 1.5 1.1 2.9 1.2 3.1.2.3 2.2 3.4 5.2 4.7 2.6 1.1 3.1.9 3.7.9.6 0 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.7-.4-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.5-.2-.7.2-.2.4-.8 1.2-1 1.4-.2.2-.4.2-.8 0-.4-.2-1.6-.6-3-2-1.1-1.1-1.8-2.3-2-2.7-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.5.2-.1.2-.2.3-.4.1-.2.1-.3 0-.5-.1-.2-.9-2.2-1.2-2.8-.2-.5-.5-.5-.7-.5z"/>
+    </svg>
+  </a>
+
   <script>
+    // ==== coș: badge din localStorage ====
+    function getCart(){
+      try{
+        return JSON.parse(localStorage.getItem('cart') || '[]');
+      }catch(e){
+        return [];
+      }
+    }
+    function updateCartBadge(){
+      const badge = document.querySelector('.cart .badge');
+      if(!badge) return;
+      const cart = getCart();
+      const totalQty = cart.reduce((sum, item) => sum + (item.qty || 0), 0);
+      badge.textContent = totalQty;
+    }
+
     // ===== Mobile nav toggle =====
     const navToggle = document.querySelector('.nav-toggle');
     const bodyEl = document.body;
@@ -1061,7 +1042,6 @@
       const cards = Array.from(grid.querySelectorAll('[data-product]'));
       if (!cards.length) return;
 
-      // Memorăm ordinea inițială (pentru sortare "implicit")
       cards.forEach((card, index) => {
         card.dataset.index = String(index);
       });
@@ -1075,7 +1055,6 @@
       const countEl       = document.getElementById('product-count');
       const resetBtn      = document.getElementById('reset-filters');
 
-      // Calculăm prețul maxim din carduri
       let maxPrice = 0;
       cards.forEach(card => {
         const p = parseFloat(card.dataset.price || '0') || 0;
@@ -1116,7 +1095,6 @@
         const { category, gender, max, query, sort } = getFilters();
         let visibleCount = 0;
 
-        // mai întâi sortăm
         const ordered = sortCards(sort, cards);
 
         ordered.forEach(card => {
@@ -1183,7 +1161,6 @@
         });
       }
 
-      // aplicăm filtrarea inițială
       applyFilters();
     })();
 
@@ -1213,6 +1190,9 @@
       updateHero();
       setInterval(updateHero, 3500);
     })();
+
+    // init badge coș
+    document.addEventListener('DOMContentLoaded', updateCartBadge);
   </script>
 </body>
 </html>

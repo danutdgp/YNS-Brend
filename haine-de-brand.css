@@ -671,3 +671,74 @@ body.page-brand main{
     margin-bottom:16px;
   }
 }
+/* ====== Carduri produse – imagine full width, fără margini ====== */
+
+/* scoatem orice padding interior din card */
+.product-card{
+  padding:0;
+}
+
+/* link-ul ocupă tot cardul, imaginea stă sus, textul jos */
+.product-card a{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+/* containerul pentru imagine: full width, fără margini */
+.product-media{
+  margin:0;
+  width:100%;
+  border-radius:0;                /* cardul are deja radius + overflow:hidden */
+  border-bottom:1px solid rgba(217,183,107,.2);
+  background:#0b0c10;
+  overflow:hidden;
+  aspect-ratio:3/4;               /* toate pozele la același raport */
+}
+
+/* imaginea umple complet containerul, fără benzi pe lateral */
+.product-media img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+
+/* zona de text rămâne separată, cu padding-ul ei */
+.product-body{
+  padding:14px 16px 18px;
+}
+/* ===== Carduri – butoane aliniate jos, cu spațiu față de text ===== */
+
+/* Cardul devine container flex pe verticală */
+.product-card{
+  display:flex;
+  flex-direction:column;
+}
+
+/* Link-ul ocupă tot cardul */
+.product-card > a{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+/* Corpul cardului: flex pe verticală, ca să putem împinge butonul jos */
+.product-body{
+  flex:1 1 auto;
+  display:flex;
+  flex-direction:column;
+  padding:14px 16px 18px; /* păstrăm padding-ul general */
+}
+
+/* Butonul este flex-item-ul de jos, cu spațiu clar față de text */
+.product-cta{
+  margin-top:auto;   /* împinge întregul buton la baza cardului */
+  margin-top:auto;
+  /* spațiul față de textul de deasupra vine de la padding-ul lui însuși */
+}
+
+/* Dacă vrei să fie un pic mai „aerisit” față de text, poți adăuga: */
+.product-info{
+  margin-bottom:10px; /* mic spațiu sub descriere, înainte de buton */
+}

@@ -1066,3 +1066,54 @@ body.nav-open .nav-toggle span:nth-child(3) {
     order: 3 !important;
   }
 }
+/* Linie aurie cu fade-out (folosită sub titlul de pe Acasă + haine de brand) */
+.page-title-underline{
+  width:90px;
+  height:2px;
+  border-radius:999px;
+  background:linear-gradient(
+    90deg,
+    var(--gold-2, #f1d48a),
+    rgba(217,183,107,0)
+  );
+  margin-top:4px;
+  margin-bottom:10px;
+}
+
+/* Icon WhatsApp suport (fix în colț dreapta-jos) */
+.wa-support{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:#25d366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  box-shadow:0 12px 30px rgba(0,0,0,.7);
+  cursor:pointer;
+  z-index:1100;
+}
+.wa-support svg{
+  width:22px;
+  height:22px;
+}
+.wa-support:hover{
+  transform:translateY(-2px);
+}
+
+/* Fade pentru imaginile din HERO (.auto-swap) */
+.auto-swap{
+  transition:opacity .22s ease-out;
+}
+.auto-swap.is-fading{
+  opacity:0;
+}
+
+/* Opțional: pentru ca scroll-ul la #colectii-X să nu fie acoperit de header sticky */
+.product-card{
+  scroll-margin-top:90px; /* ajustează în funcție de înălțimea headerului */
+}
